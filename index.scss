@@ -1,0 +1,382 @@
+/*HOME PAGE*/
+img [src="files/img/IMG_8779.jpg"] {
+  min-height: 100%;
+  min-width: 1024px;
+  min-height: 780px;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+#aboutlocator {
+  position: absolute;
+  visibility: visible;
+  left: 80px;
+  top: 117px;
+  z-index: 1;
+}
+
+#writinglocator {
+  position: absolute;
+  visibility: visible;
+  left: 160px;
+  top: 117px;
+  z-index: 1;
+}
+
+#travellocator {
+  position: absolute;
+  visibility: visible;
+  left: 255px;
+  top: 117px;
+  z-index: 1;
+}
+
+#projectslocator {
+  position: absolute;
+  visibility: visible;
+  left: 340px;
+  top: 117px;
+  z-index: 1;
+}
+
+#readinglocator {
+  position: absolute;
+  visibility: visible;
+  left: 450px;
+  top: 116px;
+  z-index: 1;
+}
+
+#homelinks {
+  color: white;
+  font-size: 24px;
+}
+
+#rectangle {
+  position: absolute;
+  visibility: visible;
+  right: 0px;
+  top: 315px;
+  z-index: 1;
+  background-color: #333333;
+}
+
+#rectanglefont {
+ font-family: "Lucida Grande", Tahoma;
+ font-size: 20px;
+ font-weight: lighter;
+ font-variant: normal;
+ text-transform: uppercase;
+ color: white;
+ letter-spacing: 0.3em;
+}
+
+#footer {
+    text-align: center;
+    color: white;
+    vertical-align: bottom !important;
+    position: relative;
+    z-index: -1;
+}
+
+/*NAVBAR PAGE */
+#navbarlinks {
+  color: black;
+  font-size: 16px;
+  font-family: "Courier New", sans-serif;
+}
+
+.nav-stacked {
+  position: absolute;
+  visibility: visible;
+  left: 630px;
+  top: 5px;
+}
+
+/*ABOUT PAGE*/
+#about-page {
+  min-height: 100%;
+  min-width: 1024px;
+  min-height: 780px;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #F0F8FF;
+  z-index: 2;
+}
+
+#about-text {
+  color: dimgray;
+  max-width: 500px;
+  position: absolute;
+  top: 30%;
+  left: 38%;
+}
+
+#about-title {
+ z-index: 1;
+ font-family: "Lucida Grande", Tahoma;
+ font-size: 34px;
+ font-weight: lighter;
+ font-variant: normal;
+ text-transform: uppercase;
+ color: black;
+ letter-spacing: 0.1em;
+ position: absolute;
+ left: 38%;
+ top: 8%;
+}
+
+#about-subtitle {
+ z-index: 1;
+ font-family: "Lucida Grande", Tahoma;
+ font-size: 24px;
+ font-weight: lighter;
+ font-variant: normal;
+ text-transform: uppercase;
+ color: black;
+ letter-spacing: 0.1em;
+ position: absolute;
+ left: 38%;
+ top: 19%;
+}
+
+#resume {
+  color: dimgray;
+  max-width: 500px;
+  position: absolute;
+  top: 60%;
+  left: 38%;
+}
+img[src="files/img/IMG_8109.jpg"] {
+  height: auto;
+  z-index: 1;
+  width: 25%;
+  height: 25%;
+  min-width: 350px;
+  min-height: 350px;
+  position: absolute;
+  top: 140px;
+  left: 100px;
+}
+
+/*WRITING PAGE*/
+
+.default-container {
+    color: #F0F8FF;
+    margin: 180px 5%;
+    min-height: 46vh;
+}
+
+#writing-page {
+  min-height: 100%;
+  min-width: 1024px;
+  min-height: 780px;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #F0F8FF;
+  z-index: 2;
+}
+
+.thumbnail {
+  position: relative;
+  margin-top: 80px;
+}
+
+img {
+  width: 100%;
+}
+
+#writing-title {
+ z-index: 1;
+ font-family: "Lucida Grande", Tahoma;
+ font-size: 26px;
+ font-weight: lighter;
+ font-variant: normal;
+ text-transform: uppercase;
+ color: black;
+ letter-spacing: 0.1em;
+ position: absolute;
+ left: 32%;
+ top: 8%;
+}
+
+#article-tile a {
+    margin-top: 15px;
+    background: rgba(255, 255, 255, 0.3);
+    border: 0px;
+    text-decoration: none;
+    box-shadow: 3px 3px 50px rgba(0,0,0, 0.3);
+    min-height: 310px;
+}
+
+#article-tile a:hover {
+    background: rgba(255, 255, 255, 0.3);
+    border: 0px;
+    font-family: 'Lucinda Grande', sans-serif;
+    box-shadow: 3px 3px 50px rgba(0,0,0, 0.7);
+}
+
+#article-tile a p {
+    color: black;
+}
+
+#article-tile-title {
+    font-size: 1.5em;
+    text-align: center;
+    font-family: 'Lucinda Grande', sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 0px;
+    margin-top: 10px;
+}
+
+#article-tile-subtitle {
+    font-size: 1.5;
+    text-align: center;
+    font-family: 'Lucinda Grande', sans-serif;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+/*TRAVEL PAGE*/
+#travel-page {
+  min-height: 100%;
+  min-width: 1024px;
+  min-height: 780px;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #F0F8FF;
+  z-index: 2;
+}
+
+/*PROJECTS PAGE*/
+#projects-page {
+  min-height: 100%;
+  min-width: 1024px;
+  min-height: 780px;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #F0F8FF;
+  z-index: 2;
+}
+
+#projects-title {
+ z-index: 1;
+ font-family: "Lucida Grande", Tahoma;
+ font-size: 26px;
+ font-weight: lighter;
+ font-variant: normal;
+ text-transform: uppercase;
+ color: black;
+ letter-spacing: 0.1em;
+ position: absolute;
+ left: 40%;
+ top: 10%;
+}
+
+#project-tile a {
+    margin-top: 15px;
+    background: rgba(255, 255, 255, 0.3);
+    border: 0px;
+    text-decoration: none;
+    box-shadow: 3px 3px 50px rgba(0,0,0, 0.3);
+    min-height: 310px;
+}
+
+#project-tile a:hover {
+    background: rgba(255, 255, 255, 0.3);
+    border: 0px;
+    font-family: 'Lucinda Grande', sans-serif;
+    box-shadow: 3px 3px 50px rgba(0,0,0, 0.7);
+}
+
+#project-tile a p {
+    color: black;
+}
+
+#project-tile-title {
+    font-size: 1.5em;
+    text-align: center;
+    font-family: 'Lucinda Grande', sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 0px;
+    margin-top: 10px;
+}
+
+#project-tile-subtitle {
+    font-size: 1.5;
+    text-align: center;
+    font-family: 'Lucinda Grande', sans-serif;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+/*READING PAGE*/
+#reading-page {
+  min-height: 100%;
+  min-width: 1024px;
+  min-height: 780px;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #F0F8FF;
+  z-index: 2;
+}
+
+img[src="files/img/books.jpg"] {
+  height: auto;
+  z-index: 1;
+  width: 35%;
+  height: 35%;
+  min-width: 500px;
+  min-height: 500px;
+  position: absolute;
+  top: 185px;
+  left: 50px;
+}
+
+ul {
+  list-style: none;
+  font-size: 12px;
+  color: black;
+  font-family: "Lucida Grande", Tahoma;
+  font-weight: lighter;
+  letter-spacing: 0.1em;
+  z-index: 1;
+  top: 300px;
+  left: 800px;
+  position: absolute;
+}
+
+#reading-text {
+ z-index: 1;
+ font-family: "Lucida Grande", Tahoma;
+ font-size: 20px;
+ font-weight: lighter;
+ font-variant: normal;
+ text-transform: uppercase;
+ color: black;
+ letter-spacing: 0.1em;
+ position: absolute;
+ left: 30%;
+ top: 10%;
+}
+
+.btn-group {
+  position: absolute;
+  visibility: visible;
+  right: 15%;
+  top: 18%;
+}
