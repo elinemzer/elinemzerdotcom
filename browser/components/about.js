@@ -12,9 +12,9 @@ export default function Home () {
       <h3 id="about-subtitle">writer, researcher & software developer.</h3>
       <div id="about-text">
       <h4><p>I'm fascinated by the intersection of globalization, demography and technology with a particular focus on the 'informal' economy, sustainable urban development, currency markets, and the future of work.</p>
-      <p>I've done research on entrepreneurship in Rio de Janeiro's favelas, early-adopters of Bitcoin in Argentina and corruption in Guatemalan elections. </p>
+      <p>I've done research on entrepreneurship in Rio de Janeiro's favelas, early-adopters of Bitcoin in Argentina and corruption in Guatemalan elections. I graduated from Northwestern University in 2015 and completed Fullstack Academy's Software Engineering Immersive in 2017. </p>
 
-      <p>I'm happiest when I'm working hard on something challenging and meaningful, and drinking an iced coffee.</p>
+      <p>I'm happiest when I'm working hard on something challenging and meaningful, and drinking an iced espresso.</p>
 
       </h4>
     </div>

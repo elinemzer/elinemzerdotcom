@@ -79,8 +79,8 @@ export default function Writing () {
           <a className="thumbnail" href="https://nomadnemz.wordpress.com/2013/11/04/i-ordered-an-iced-coffee-in-europe-and-this-is-what-i-got/">
             <img src="files/img/icedcoffee.jpg" />
             <div className="caption">
-              <p id="article-tile-title">I ordered an iced coffee in Europe...</p>
-              <p id="article-tile-subtitle">And this is what I got.</p>
+              <p id="article-tile-title">I ordered an iced coffee in Europe, and this is what I got.</p>
+              <p id="article-tile-subtitle">Before Cold Brew went global.</p>
             </div>
           </a>
         </div>
@@ -91,6 +91,16 @@ export default function Writing () {
             <div className="caption">
               <p id="article-tile-title">Headed West</p>
               <p id="article-tile-subtitle">On Freeway Narratives.</p>
+            </div>
+          </a>
+        </div>
+
+        <div id="article-tile" className="col-md-4">
+          <a className="thumbnail" href="https://medium.com/@elinemzer/reflecting-on-the-innocence-of-main-street-6c52ed9c73d7">
+            <img src="files/img/iowa.jpg" />
+            <div className="caption">
+              <p id="article-tile-title">Reflecting on the Innocence of Main Street</p>
+              <p id="article-tile-subtitle">Taking a look at my college application essay about Iowa, 8 years later.</p>
             </div>
           </a>
         </div>

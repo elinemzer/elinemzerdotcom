@@ -12,7 +12,8 @@ import About from './components/About';
 import Writing from './components/Writing';
 import Projects from './components/Projects';
 import Travel from './components/Travel';
-import Navbar from './components/Navbar'
+import Navbar from './components/Navbar';
+import readingList from './components/readingList';
 
 
 ReactDOM.render(
@@ -26,7 +27,7 @@ ReactDOM.render(
         <Route path="/reading/:year" component={Reading} />
         <Route path="/writing" component={Writing} />
         <Route path="/projects" component={Projects} />
-        <Route path="/travel" component={Travel} />
+        <Route path="/travel" component={readingList} />
 	  </Router>
   </Provider>,
   document.getElementById('app') // make sure this is the same as the id of the div in your index.html

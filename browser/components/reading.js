@@ -1,43 +1,82 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router';
-import Navbar from './navbar'
+import Navbar from './navbar';
+import longform from '../../data';
 
 export default class Reading extends Component {
   constructor(props){
     super(props);
       this.state = {
-        show2014List: false,
-        show2015List: false,
-        show2016List: false
+        list: []
       }
       this.show2014List = this.show2014List.bind(this);
       this.show2015List = this.show2015List.bind(this);
       this.show2016List = this.show2016List.bind(this);
   }
 
-  show2014List(props){
-      this.setState({
-        show2014List: true
+  show2014List(){
+    const filteredList = longform.filter(article => {
+      if (article.year === "2014"){
+        return article;
+      }
     })
-    return <twentyFourteen />
+
+    const selectedList = filteredList.map(article =>{
+      return {
+        genre: article.genre,
+        title: article.title,
+        article: article.article,
+        caption: article.caption,
+        author: article.author
+      }
+    })
+      this.setState({
+        list: selectedList
+    })
   }
 
   show2015List(){
-      this.setState({
-        show2015List: true
+    const filteredList = longform.filter(article => {
+      if (article.year === "2015"){
+        return article;
+      }
     })
-    console.log('bonjour')
+    const selectedList = filteredList.map(article =>{
+      return {
+        genre: article.genre,
+        title: article.title,
+        article: article.article,
+        caption: article.caption,
+        author: article.author
+      }
+    })
+      this.setState({
+        list: selectedList
+    })
   }
 
   show2016List(){
-      this.setState({
-        show2016List: true
+    const filteredList = longform.filter(article => {
+      if (article.year === "2016"){
+        return article;
+      }
     })
-    console.log('bonjour')
+    const selectedList = filteredList.map(article =>{
+      return {
+        genre: article.genre,
+        title: article.title,
+        article: article.article,
+        caption: article.caption,
+        author: article.author
+      }
+    })
+      this.setState({
+        list: selectedList
+    })
   }
 
-
       render () {
+        console.log(this.state.list)
         return (
           <div id="reading-page">
         <Navbar />
@@ -47,14 +86,34 @@ export default class Reading extends Component {
           The best stuff I read each year.
         </div>
 
-        <div className="btn-group" role="group">
+        <div id="articles-border">
+          {
+            this.state.list.map(article => {
+              return (
+
+
+                article.author
+
+              )
+            })
+          }
+        </div>
+
+        <div className="btn-group btn-sample" role="group">
             <button type="button" className="btn btn-default" onClick={this.show2014List}>twenty fourteen.</button>
             <button type="button" className="btn btn-default" onClick={this.show2015List}>twenty fifteen.</button>
             <button type="button" className="btn btn-default" onClick={this.show2016List}>twenty sixteen.</button>
         </div>
 
+
+
+
+
         </div>
         <img src="files/img/books.jpg" />
+        <div id="reading-caption">
+        <h5>livraria ler devagar, bairro de alcantara, lisboa.</h5>
+        </div>
       </div>
         )
        }

@@ -34,6 +34,10 @@ export default function Home () {
         <Link to="/reading" id="homelinks">reading list.</Link>
       </div>
 
+      <div id="home-resume">
+      <p><a href="files/img/resume.pdf"> resume </a> | <a href="https://www.linkedin.com/in/elinemzer"> linkedin </a> | <a href="https://www.facebook.com/Nemzer7"> facebook</a> | <a href="https://www.instagram.com/nemz7/?hl=en"> instagram </a> | <a href="https://github.com/elinemzer">github</a></p>
+      </div>
+
       </div>
     </div>
   )
