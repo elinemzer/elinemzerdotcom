@@ -76,7 +76,6 @@ export default class Reading extends Component {
   }
 
       render () {
-        console.log(this.state.list)
         return (
           <div id="reading-page">
         <Navbar />
@@ -90,10 +89,9 @@ export default class Reading extends Component {
           {
             this.state.list.map(article => {
               return (
-
-
-                article.author
-
+                <div id="list-text">
+                <a href={article.article}>{article.title}</a>: {article.caption}
+                </div>
               )
             })
           }
@@ -104,10 +102,6 @@ export default class Reading extends Component {
             <button type="button" className="btn btn-default" onClick={this.show2015List}>twenty fifteen.</button>
             <button type="button" className="btn btn-default" onClick={this.show2016List}>twenty sixteen.</button>
         </div>
-
-
-
-
 
         </div>
         <img src="files/img/books.jpg" />

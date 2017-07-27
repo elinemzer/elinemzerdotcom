@@ -25,7 +25,6 @@ export default function Home () {
 
     <img src="files/img/IMG_8109.jpg" />
     </div>
-    <Footer />
   </div>
 )
 }

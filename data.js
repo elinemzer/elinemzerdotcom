@@ -330,8 +330,8 @@ const longform = [
   {
     year: "2016",
     genre: "Pre-US Election",
-    article: "",
-    title: "An American in a Strange Landhttps://www.nytimes.com/2016/11/06/magazine/an-american-in-a-strange-land.html",
+    article: "https://www.nytimes.com/2016/11/06/magazine/an-american-in-a-strange-land.html",
+    title: "An American in a Strange Land",
     caption: "After more than a decade abroad, a foreign correspondent comes back to the US to try and figure out what the fuck is going on. On the pulse of America in 2016",
     author: "Jim Yardley"
   },
