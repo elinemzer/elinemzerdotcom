@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router';
 import Navbar from './navbar';
 import longform from '../../data';
+import classNames from 'classnames';
 
 export default class Reading extends Component {
   constructor(props){
@@ -14,6 +15,10 @@ export default class Reading extends Component {
       this.show2016List = this.show2016List.bind(this);
   }
 
+  componentWillMount() {
+    this.show2016List();
+  }
+
   show2014List(){
     const filteredList = longform.filter(article => {
       if (article.year === "2014"){
@@ -21,7 +26,7 @@ export default class Reading extends Component {
       }
     })
 
-    const selectedList = filteredList.map(article =>{
+    const selected2014List = filteredList.map(article =>{
       return {
         genre: article.genre,
         title: article.title,
@@ -31,7 +36,7 @@ export default class Reading extends Component {
       }
     })
       this.setState({
-        list: selectedList
+        list: selected2014List
     })
   }
 
@@ -41,7 +46,7 @@ export default class Reading extends Component {
         return article;
       }
     })
-    const selectedList = filteredList.map(article =>{
+    const selected2015List = filteredList.map(article =>{
       return {
         genre: article.genre,
         title: article.title,
@@ -51,7 +56,7 @@ export default class Reading extends Component {
       }
     })
       this.setState({
-        list: selectedList
+        list: selected2015List
     })
   }
 
@@ -61,7 +66,7 @@ export default class Reading extends Component {
         return article;
       }
     })
-    const selectedList = filteredList.map(article =>{
+    const selected2016List = filteredList.map(article =>{
       return {
         genre: article.genre,
         title: article.title,
@@ -71,43 +76,53 @@ export default class Reading extends Component {
       }
     })
       this.setState({
-        list: selectedList
+        list: selected2016List
     })
   }
 
       render () {
+        // const { select2014, select2015, select2016 } = this.state;
+        // const class2014, class2015, cl
+
         return (
           <div id="reading-page">
-        <Navbar />
-        <div>
+            <Navbar />
+          <div className="container-fluid">
+            <div id="reading-text">
+              The best stuff I read each year.
+            </div>
+            <div className="row">
+              <div className="col-md-4"></div>
+              <ul className="nav nav-tabs col-md-offset-5">
+                <li role="presentation"  onClick={this.show2014List}><a href='#/reading'>twenty fourteen.</a></li>
+                <li role="presentation"  onClick={this.show2015List}><a href='#/reading'>twenty fifteen.</a></li>
+                <li role="presentation"  onClick={this.show2016List}><a href='#/reading'>twenty sixteen.</a></li>
+              </ul>
+            </div>
+            <div className="row">
+              <div className="col-md-5">
+              <img  src="files/img/books.jpg" />
+              <div id="reading-caption">
+              <h5>livraria ler devagar, bairro de alcantara, lisboa.</h5>
+              </div>
+            </div>
 
-        <div id="reading-text">
-          The best stuff I read each year.
-        </div>
 
-        <div id="articles-border">
-          {
-            this.state.list.map(article => {
-              return (
-                <div id="list-text">
-                <a href={article.article}>{article.title}</a>: {article.caption}
-                </div>
-              )
-            })
-          }
-        </div>
-
-        <div className="btn-group btn-sample" role="group">
-            <button type="button" className="btn btn-default" onClick={this.show2014List}>twenty fourteen.</button>
-            <button type="button" className="btn btn-default" onClick={this.show2015List}>twenty fifteen.</button>
-            <button type="button" className="btn btn-default" onClick={this.show2016List}>twenty sixteen.</button>
-        </div>
+              <div className="col-md-7" id="articles-border">
+                {
+                  this.state.list.map(article => {
+                    return (
+                      <div id="list-text" key={article.title}>
+                        <a href={article.article}>{article.title}</a>: {article.caption}
+                      </div>
+                    )
+                  })
+                }
+              </div>
+            </div>
 
         </div>
-        <img src="files/img/books.jpg" />
-        <div id="reading-caption">
-        <h5>livraria ler devagar, bairro de alcantara, lisboa.</h5>
-        </div>
+
       </div>
         )
        }

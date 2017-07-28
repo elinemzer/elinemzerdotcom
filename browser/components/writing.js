@@ -11,7 +11,7 @@ export default function Writing () {
         <h2 className="fancy-type" id="writing-title">Articles, Thoughts & Essays</h2>
         <div className="row">
 
-          <div id="article-tile" className="col-md-4">
+          <div id="article-tile" className="col-xs-12 col-sm-6 col-md-6 col-lg-4">
             <a className="thumbnail" href="http://www.rioonwatch.org/?p=34763">
               <img src="files/img/informality.jpg" />
               <div className="caption">
@@ -21,7 +21,7 @@ export default function Writing () {
             </a>
          </div>
 
-         <div id="article-tile" className="col-md-4">
+         <div id="article-tile" className="col-xs-12 col-sm-6 col-md-6 col-lg-4">
            <a className="thumbnail" href="http://www.rioonwatch.org/?p=30710">
              <img src="https://static01.nyt.com/images/2015/09/26/world/26BRAZIL/26BRAZIL-master1050.jpg" />
              <div className="caption">
@@ -31,7 +31,7 @@ export default function Writing () {
            </a>
         </div>
 
-        <div id="article-tile" className="col-md-4">
+        <div id="article-tile" className="col-xs-12 col-sm-6 col-md-6 col-lg-4">
           <a className="thumbnail" href="http://www.rioonwatch.org/?p=32871">
             <img src="http://www.rioonwatch.org/wp-content/uploads/2016/09/dilmaelula.jpg" />
             <div className="caption">
@@ -43,7 +43,7 @@ export default function Writing () {
        </div>
 
       <div className="row">
-       <div id="article-tile" className="col-md-4">
+       <div id="article-tile" className="col-xs-12 col-sm-6 col-md-6 col-lg-4">
          <a className="thumbnail" href="http://www.rioonwatch.org/?p=30636">
            <img src="files/img/favela.jpg" />
            <div className="caption">
@@ -53,7 +53,7 @@ export default function Writing () {
          </a>
        </div>
 
-       <div id="article-tile" className="col-md-4">
+       <div id="article-tile" className="col-xs-12 col-sm-6 col-md-6 col-lg-4">
          <a className="thumbnail" href="http://blog.undergradresearch.northwestern.edu/blog/elikate/">
            <img src="files/img/bitcoin.jpg" />
            <div className="caption">
@@ -63,7 +63,7 @@ export default function Writing () {
          </a>
        </div>
 
-       <div id="article-tile" className="col-md-4">
+       <div id="article-tile" className="col-xs-12 col-sm-6 col-md-6 col-lg-4">
          <a className="thumbnail" href="https://nomadnemz.wordpress.com/2014/06/19/cruzando-la-frontera/">
            <img src="files/img/border.jpg" />
            <div className="caption">
@@ -75,7 +75,7 @@ export default function Writing () {
       </div>
 
       <div className="row">
-        <div id="article-tile" className="col-md-4">
+        <div id="article-tile" className="col-xs-12 col-sm-6 col-md-6 col-lg-4">
           <a className="thumbnail" href="https://nomadnemz.wordpress.com/2013/11/04/i-ordered-an-iced-coffee-in-europe-and-this-is-what-i-got/">
             <img src="files/img/icedcoffee.jpg" />
             <div className="caption">
@@ -85,7 +85,7 @@ export default function Writing () {
           </a>
         </div>
 
-        <div id="article-tile" className="col-md-4">
+        <div id="article-tile" className="col-xs-12 col-sm-6 col-md-6 col-lg-4">
           <a className="thumbnail" href="https://nomadnemz.wordpress.com/2013/08/09/longrides/">
             <img src="files/img/freeway.jpg" />
             <div className="caption">
@@ -95,7 +95,7 @@ export default function Writing () {
           </a>
         </div>
 
-        <div id="article-tile" className="col-md-4">
+        <div id="article-tile" className="col-xs-12 col-sm-6 col-md-6 col-lg-4">
           <a className="thumbnail" href="https://medium.com/@elinemzer/reflecting-on-the-innocence-of-main-street-6c52ed9c73d7">
             <img src="files/img/iowa.jpg" />
             <div className="caption">
