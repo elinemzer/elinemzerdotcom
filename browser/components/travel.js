@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router';
-import Navbar from './navbar';
+import Navbar from './Navbar';
 
 export default function Travel () {
   return (
@@ -12,11 +12,10 @@ export default function Travel () {
       </div>
 
       <div className="region">
-      <ul className="nav nav-tabs">
-        <li role="presentation"><a href='#/reading'>usa.</a></li>
-        <li role="presentation"><a href='#/reading'>central america.</a></li>
-        <li role="presentation"><a href='#/reading'>south america.</a></li>
-        <li role="presentation"><a href='#/reading'>europe.</a></li>
+      <ul id="travel-tabs" className="nav nav-tabs">
+        <li role="presentation"><a href='#/travel/central-america'>central america.</a></li>
+        <li role="presentation"><a href='#/travel/south-america'>south america.</a></li>
+        <li role="presentation"><a href='#/travel/europe'>europe.</a></li>
 
       </ul>
     </div>

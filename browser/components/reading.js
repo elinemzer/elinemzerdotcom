@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router';
-import Navbar from './navbar';
+import Navbar from './Navbar';
 import longform from '../../data';
 import classNames from 'classnames';
 
@@ -81,8 +81,6 @@ export default class Reading extends Component {
   }
 
       render () {
-        // const { select2014, select2015, select2016 } = this.state;
-        // const class2014, class2015, cl
 
         return (
           <div id="reading-page">

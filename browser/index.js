@@ -13,6 +13,10 @@ import Writing from './components/Writing';
 import Projects from './components/Projects';
 import Travel from './components/Travel';
 import Navbar from './components/Navbar';
+import CentralAmerica from './components/CentralAmerica';
+import SouthAmerica from './components/SouthAmerica';
+import Europe from './components/Europe';
+
 
 
 ReactDOM.render(
@@ -27,12 +31,10 @@ ReactDOM.render(
         <Route path="/writing" component={Writing} />
         <Route path="/projects" component={Projects} />
         <Route path="/travel" component={Travel} />
+          <Route path="/travel/central-america" component={CentralAmerica} />
+          <Route path="/travel/south-america" component={SouthAmerica} />
+          <Route path="/travel/europe" component={Europe} />
 	  </Router>
   </Provider>,
   document.getElementById('app') // make sure this is the same as the id of the div in your index.html
 );
-
-
-// <Route path='/landing' component = {Landing} />
-// <Route path='/' component = {AppContainer} onEnter={onAppEnter}>
-// </Route>

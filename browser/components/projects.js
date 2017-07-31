@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router';
-import Navbar from './navbar';
+import Navbar from './Navbar';
 
 
 export default function Projects () {
