@@ -384,6 +384,41 @@ img [src="files/img/fuego.jpg"] {
     margin-top: 0px;
 }
 
+#mapid {
+	height: 500px;
+}
+
+#map-text {
+ z-index: 1;
+ font-family: "Lucida Grande", Tahoma;
+ font-size: 20px;
+ font-weight: lighter;
+ font-variant: normal;
+ text-transform: uppercase;
+ color: black;
+ letter-spacing: 0.1em;
+ display: flex;
+ justify-content: left;
+ margin-top: 50px;
+ margin-bottom: 10px;
+ margin-left: 20px;
+}
+
+#back-text {
+ z-index: 1;
+ font-family: "Lucida Grande", Tahoma;
+ font-size: 20px;
+ font-weight: lighter;
+ font-variant: normal;
+ text-transform: uppercase;
+ color: black;
+ letter-spacing: 0.1em;
+ display: flex;
+ justify-content: left;
+ margin-left: 20px;
+
+}
+
 /*READING PAGE*/
 #reading-page {
   height: 100vh;
@@ -452,6 +487,6 @@ ul {
     border-radius: 25px;
     border: 2px solid black;
     padding: 20px;
-    width: 700px;
+    width: 800px;
     height: 515px;
 }

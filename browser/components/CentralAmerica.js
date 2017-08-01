@@ -12,13 +12,13 @@ export default function CentralAmerica () {
         <div className="row">
 
           <div id="project-tile" className="col-xs-12 col-sm-6 col-md-6 col-lg-4">
-            <a className="thumbnail" href="https://piscesaquascaping.herokuapp.com/">
+            <Link className="thumbnail" to="/travel/central-america/mexico">
               <img src="files/img/mexico.jpg" />
               <div className="caption">
                 <p id="project-tile-title">Mexico</p>
                 <p id="project-tile-subtitle">My top haunts in Distrito Federal</p>
               </div>
-            </a>
+            </Link>
          </div>
 
          <div id="project-tile" className="col-xs-12 col-sm-6 col-md-6 col-lg-4">

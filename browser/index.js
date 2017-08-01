@@ -16,6 +16,7 @@ import Navbar from './components/Navbar';
 import CentralAmerica from './components/CentralAmerica';
 import SouthAmerica from './components/SouthAmerica';
 import Europe from './components/Europe';
+import Mexico from './components/Mexico';
 
 
 
@@ -32,6 +33,8 @@ ReactDOM.render(
         <Route path="/projects" component={Projects} />
         <Route path="/travel" component={Travel} />
           <Route path="/travel/central-america" component={CentralAmerica} />
+          <Route path="/travel/central-america/mexico" component={Mexico} />
+
           <Route path="/travel/south-america" component={SouthAmerica} />
           <Route path="/travel/europe" component={Europe} />
 	  </Router>
