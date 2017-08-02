@@ -191,9 +191,8 @@ img {
  text-transform: uppercase;
  color: black;
  letter-spacing: 0.1em;
- position: absolute;
- left: 32%;
- top: 8%;
+ margin-top: 14%;
+ margin-left: 18%;
 }
 
 #article-tile a {
@@ -283,9 +282,8 @@ img [src="files/img/fuego.jpg"] {
  text-transform: uppercase;
  color: black;
  letter-spacing: 0.1em;
- position: absolute;
- left: 25%;
- top: 10%;
+ margin-top: 14%;
+ margin-left: 18%;
 }
 
 #south-america-title {
@@ -297,9 +295,21 @@ img [src="files/img/fuego.jpg"] {
  text-transform: uppercase;
  color: black;
  letter-spacing: 0.1em;
- position: absolute;
- left: %;
- top: 10%;
+ margin-top: 14%;
+ margin-left: 18%;
+}
+
+#europe-title {
+ z-index: 1;
+ font-family: "Lucida Grande", Tahoma;
+ font-size: 26px;
+ font-weight: lighter;
+ font-variant: normal;
+ text-transform: uppercase;
+ color: black;
+ letter-spacing: 0.1em;
+ margin-top: 14%;
+ margin-left: 18%;
 }
 
 .region {
@@ -343,9 +353,8 @@ img [src="files/img/fuego.jpg"] {
  text-transform: uppercase;
  color: black;
  letter-spacing: 0.1em;
- position: absolute;
- left: 40%;
- top: 10%;
+ margin-top: 14%;
+ margin-left: 18%;
 }
 
 #project-tile a {
@@ -464,19 +473,22 @@ ul {
   z-index: 1;
 }
 
-#reading-text {
+#reading-title {
  z-index: 1;
  font-family: "Lucida Grande", Tahoma;
- font-size: 20px;
+ font-size: 26px;
  font-weight: lighter;
  font-variant: normal;
  text-transform: uppercase;
  color: black;
  letter-spacing: 0.1em;
- display: flex;
- justify-content: center;
- margin-top: 80px;
- margin-bottom: 30px;
+ margin-top: 14%;
+ margin-left: 11%;
+ margin-bottom: 5%;
+}
+
+#reading-tabs{
+  margin-top: 7%;
 }
 
 .btn-sample {

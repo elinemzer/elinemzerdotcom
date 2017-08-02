@@ -85,13 +85,15 @@ export default class Reading extends Component {
         return (
           <div id="reading-page">
             <Navbar />
-          <div className="container-fluid">
-            <div id="reading-text">
-              The best stuff I read each year.
+
+            <div className="row" className="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+            <div id="reading-title">The best stuff I read each year.</div>
             </div>
             <div className="row">
+
+              <div className="container-fluid">
               <div className="col-md-4"></div>
-              <ul className="nav nav-tabs col-md-offset-5">
+              <ul id="reading-tabs" className="nav nav-tabs col-md-offset-5">
                 <li role="presentation"  onClick={this.show2014List}><a href='#/reading'>twenty fourteen.</a></li>
                 <li role="presentation"  onClick={this.show2015List}><a href='#/reading'>twenty fifteen.</a></li>
                 <li role="presentation"  onClick={this.show2016List}><a href='#/reading'>twenty sixteen.</a></li>

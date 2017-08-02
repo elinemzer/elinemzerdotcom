@@ -7,9 +7,12 @@ export default function SouthAmerica () {
   return (
     <div id="projects-page">
       <Navbar />
-      <div className="container-fluid default-container">
+      <div className="row" className="col-xs-12 col-sm-6 col-md-6 col-lg-4">
         <h2 className="fancy-type" id="south-america-title">South America Travel Guides</h2>
-        <div className="row">
+      </div>
+      <div className="row">
+        
+      <div className="container-fluid default-container">
 
           <div id="project-tile" className="col-xs-12 col-sm-6 col-md-6 col-lg-4">
             <a className="thumbnail" href="https://piscesaquascaping.herokuapp.com/">
