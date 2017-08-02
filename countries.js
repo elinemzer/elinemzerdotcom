@@ -2,22 +2,12 @@ const places = [
   {
     country: 'mexico',
     city: 'mexico d.f.',
-    overview: 'An awesome getaway from both coasts',
-    neighborhoods: 'La condesa is cool',
+    overview: 'CDMX is hot right now. ',
+    neighborhoods: 'Most gringos don\'t stray too far from La Condesa and La Roma Norte. I spent a month living in Roma Sur, immediately south of \b something else',
     activities: 'go to frida kahlo',
     restaurants: 'contra mar',
     bars: 'mezcal!',
-    cafes: [
-      { name: 'Dosis',
-        placeId: 'ChIJ3f4lPyX_0YUR8lpHjtzEGxM'
-      },
-      { name: 'Cucurucho',
-        placeId: 'ChIJU5A2ITz_0YURsC60fDL48L0'
-      },
-      {
-        name: 'Chiquitito',
-        placeId: 'ChIJV_W9HGr_0YURpcwR_-cpQWg'
-      }],
+    cafes: ['Dosis','Cucurucho','chiquitito'],
     playlist: 'listen to Mana',
     read: 'marquez'
 

@@ -11,11 +11,10 @@ export default function Writing () {
         <div className="row" className="col-xs-12 col-sm-6 col-md-6 col-lg-4">
         <h2 className="fancy-type" id="writing-title">Articles, Thoughts & Essays</h2>
         </div>
-
         <div className="row">
-          <div className="container-fluid default-container">
+        <div className="container-fluid default-container">
 
-
+          <div className="row">
           <div id="article-tile" className="col-xs-12 col-sm-6 col-md-6 col-lg-4">
             <a className="thumbnail" href="http://www.rioonwatch.org/?p=34763">
               <img src="files/img/informality.jpg" />
@@ -45,8 +44,10 @@ export default function Writing () {
             </div>
           </a>
        </div>
-       </div>
+     </div>
 
+
+       <div className="row">
        <div id="article-tile" className="col-xs-12 col-sm-6 col-md-6 col-lg-4">
          <a className="thumbnail" href="http://www.rioonwatch.org/?p=30636">
            <img src="files/img/favela.jpg" />
@@ -76,7 +77,9 @@ export default function Writing () {
            </div>
          </a>
        </div>
+     </div>
 
+     <div className="row">
         <div id="article-tile" className="col-xs-12 col-sm-6 col-md-6 col-lg-4">
           <a className="thumbnail" href="https://nomadnemz.wordpress.com/2013/11/04/i-ordered-an-iced-coffee-in-europe-and-this-is-what-i-got/">
             <img src="files/img/icedcoffee.jpg" />
@@ -106,9 +109,10 @@ export default function Writing () {
             </div>
           </a>
         </div>
+      </div>
 
      </div>
-
+   </div>
     </div>
   )
 }

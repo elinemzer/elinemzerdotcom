@@ -43,6 +43,9 @@ export default class Mexico extends Component {
     			}, 1000)
     		})
         function createPin (pinID) {
+          const infowindow = new google.maps.InfoWindow({
+              maxWidth: 350
+             });
         const service = new google.maps.places.PlacesService(map);
         service.getDetails({placeId: pinID }, function(place, status) {
               if (status === google.maps.places.PlacesServiceStatus.OK) {
@@ -50,16 +53,16 @@ export default class Mexico extends Component {
                     map: map,
                     position: place.geometry.location
                 });
-                // google.maps.event.addListener(marker, 'click', function() {
-                //     infowindow.setContent('<div class="infoWindow">' + place.name +'</div>');
-                //     infowindow.open(map, this);
-                // });
+                google.maps.event.addListener(marker, 'click', function() {
+                    infowindow.setContent('<div class="infoWindow">' + place.name +'</div>');
+                    infowindow.open(map, this);
+                });
               }
         });
         }
       createPin('ChIJ3f4lPyX_0YUR8lpHjtzEGxM');  //dosis
       createPin('ChIJU5A2ITz_0YURsC60fDL48L0');  //cucurucho
-      createPin('ChIJV_W9HGr_0YURpcwR_-cpQWg');  //chiquitito 
+      createPin('ChIJV_W9HGr_0YURpcwR_-cpQWg');  //chiquitito
 	 }
 
   showOverview(){
@@ -106,7 +109,7 @@ export default class Mexico extends Component {
       this.setState({
         view: allCafes
     })
-  }
+}
 
   showPlaylist(){
     const mexico = places[0];
