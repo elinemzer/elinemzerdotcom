@@ -8,7 +8,7 @@ const places = [
     restaurants: 'contra mar',
     bars: 'mezcal!',
     cafes: ['Dosis','Cucurucho','chiquitito'],
-    playlist: 'listen to Mana',
+    budget: 'listen to Mana',
     read: 'marquez'
 
 

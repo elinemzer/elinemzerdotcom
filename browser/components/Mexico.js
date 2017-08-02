@@ -22,7 +22,7 @@ export default class Mexico extends Component {
     this.showBars = this.showBars.bind(this);
     this.showNeighborhoods = this.showNeighborhoods.bind(this);
     this.showCafes = this.showCafes.bind(this);
-    this.showPlaylist = this.showPlaylist.bind(this);
+    this.showBudget = this.showBudget.bind(this);
     this.showRead = this.showRead.bind(this);
 
 	}
@@ -36,6 +36,153 @@ export default class Mexico extends Component {
       this.setState({
         mapObj: map,
         view: mexico.overview
+      })
+    		map.addListener('center_changed', () => {
+    			window.setTimeout(() => {
+    				this.setState({'currPos': {lat: map.getCenter().lat(), lng: map.getCenter().lng()}});
+    			}, 1000)
+    		})
+	 }
+
+  showOverview(){
+    const mexico = places[0];
+      this.setState({
+        view: mexico.overview
+    })
+  }
+
+  showNeighborhoods(){
+    const map = new google.maps.Map(document.getElementById('mapid'), {
+		  center: this.state.currPos,
+		  zoom: 13
+		});
+    const mexico = places[0];
+      this.setState({
+        mapObj: map,
+        view: mexico.neighborhoods
+      })
+    		map.addListener('center_changed', () => {
+    			window.setTimeout(() => {
+    				this.setState({'currPos': {lat: map.getCenter().lat(), lng: map.getCenter().lng()}});
+    			}, 1000)
+    		})
+        function createPin (pinID) {
+          const infowindow = new google.maps.InfoWindow({
+              maxWidth: 350
+             });
+        const service = new google.maps.places.PlacesService(map);
+        service.getDetails({placeId: pinID }, function(place, status) {
+              if (status === google.maps.places.PlacesServiceStatus.OK) {
+                var marker = new google.maps.Marker({
+                    map: map,
+                    position: place.geometry.location
+                });
+                google.maps.event.addListener(marker, 'click', function() {
+                    infowindow.setContent('<div class="infoWindow">' + place.name +'</div>');
+                    infowindow.open(map, this);
+                });
+              }
+        });
+      }
+      createPin('ChIJ4zXmiUT_0YUR57jJi24HHO0'); //la condesa
+      createPin('ChIJzeSi8jn_0YURMiXDZ-gzmi0'); //la roma
+      createPin('ChIJ-UNIbQMC0oURdqnTwDJ30-Q'); //polanco
+      createPin('ChIJAd0jvtz_0YURkB_9OyD0xd4'); //coyoacan
+      createPin('ChIJ8bh9yyz50YURlL2cFjXnr98'); //centro
+    }
+
+  showActivities(){
+    const map = new google.maps.Map(document.getElementById('mapid'), {
+		  center: this.state.currPos,
+		  zoom: 13
+		});
+    const mexico = places[0];
+      this.setState({
+        mapObj: map,
+        view: mexico.activities
+      })
+    		map.addListener('center_changed', () => {
+    			window.setTimeout(() => {
+    				this.setState({'currPos': {lat: map.getCenter().lat(), lng: map.getCenter().lng()}});
+    			}, 1000)
+    		})
+        function createPin (pinID) {
+          const infowindow = new google.maps.InfoWindow({
+              maxWidth: 350
+             });
+        const service = new google.maps.places.PlacesService(map);
+        service.getDetails({placeId: pinID }, function(place, status) {
+              if (status === google.maps.places.PlacesServiceStatus.OK) {
+                var marker = new google.maps.Marker({
+                    map: map,
+                    position: place.geometry.location
+                });
+                google.maps.event.addListener(marker, 'click', function() {
+                    infowindow.setContent('<div class="infoWindow">' + place.name +'</div>');
+                    infowindow.open(map, this);
+                });
+              }
+        });
+      }
+      createPin('ChIJgR1EcT7_0YUREAsbqALaMjc'); //mercado medellin
+      createPin('ChIJOz-6AMT_0YURofTM9_ekAWI'); //frida kahlo museum
+      createPin('ChIJ_6pkSM3-0YURDDaRslwM_0w'); //zocalo
+      createPin('ChIJScjIILQB0oURJMVub-MaI4Q'); //anthropology museum
+      createPin('ChIJb5QzwED_0YURQCgMF85waLs'); //hipodromo
+      createPin('ChIJb67ro-j_0YURes-LYhd6tH8'); //coyoacan st
+
+
+    }
+
+  showRestaurants(){
+		const map = new google.maps.Map(document.getElementById('mapid'), {
+		  center: this.state.currPos,
+		  zoom: 13
+		});
+    const mexico = places[0];
+      this.setState({
+        mapObj: map,
+        view: mexico.restaurants
+      })
+    		map.addListener('center_changed', () => {
+    			window.setTimeout(() => {
+    				this.setState({'currPos': {lat: map.getCenter().lat(), lng: map.getCenter().lng()}});
+    			}, 1000)
+    		})
+        function createPin (pinID) {
+          const infowindow = new google.maps.InfoWindow({
+              maxWidth: 350
+             });
+        const service = new google.maps.places.PlacesService(map);
+        service.getDetails({placeId: pinID }, function(place, status) {
+              if (status === google.maps.places.PlacesServiceStatus.OK) {
+                var marker = new google.maps.Marker({
+                    map: map,
+                    position: place.geometry.location
+                });
+                google.maps.event.addListener(marker, 'click', function() {
+                    infowindow.setContent('<div class="infoWindow">' + place.name +'</div>');
+                    infowindow.open(map, this);
+                });
+              }
+        });
+      }
+      createPin('ChIJez8vvy__0YURP0rx5WhEig4'); //contramar
+      createPin('ChIJZeIEDEH_0YURpQ_UHx0ZTTo'); //tacos hola
+      createPin('ChIJ5RLH1D7_0YURSMJSVlhAGCw'); //mercado roma
+      createPin('ChIJsyICZBb_0YURFFEjAh6qYBo'); //taqueria los parados
+      createPin('ChIJQVOX8Dr_0YURMvf_XgmgeCs'); //taqueria alvaro obregon
+      createPin('ChIJie02fDv_0YURKP-IhZY_VHQ'); //la chicha
+}
+  showBars(){
+		const map = new google.maps.Map(document.getElementById('mapid'), {
+		  center: this.state.currPos,
+		  zoom: 13
+		});
+    const mexico = places[0];
+      this.setState({
+        mapObj: map,
+        view: mexico.bars
       })
     		map.addListener('center_changed', () => {
     			window.setTimeout(() => {
@@ -60,61 +207,57 @@ export default class Mexico extends Component {
               }
         });
         }
-      createPin('ChIJ3f4lPyX_0YUR8lpHjtzEGxM');  //dosis
-      createPin('ChIJU5A2ITz_0YURsC60fDL48L0');  //cucurucho
-      createPin('ChIJV_W9HGr_0YURpcwR_-cpQWg');  //chiquitito
-	 }
-
-  showOverview(){
-    const mexico = places[0];
-      this.setState({
-        view: mexico.overview
-    })
-  }
-
-  showNeighborhoods(){
-    const mexico = places[0];
-      this.setState({
-        view: mexico.neighborhoods
-    })
-  }
-
-  showActivities(){
-    const mexico = places[0];
-      this.setState({
-        view: mexico.activities
-    })
-  }
-
-  showRestaurants(){
-    const mexico = places[0];
-      this.setState({
-        view: mexico.restaurants
-    })
-  }
-
-  showBars(){
-    const mexico = places[0];
-      this.setState({
-        view: mexico.bars
-    })
+        createPin('ChIJX03s9zr_0YURHdcjFe9hbiE'); //limantour
+        createPin('ChIJwYsplTv_0YURAjGjBCo9olU'); //balmori
+        createPin('ChIJb0o-MkH_0YUReHcA77q4Mhc'); //la clandestina
+        createPin('ChIJxRZMnzb_0YURMVE1PsNPolo'); //hanky panky
+        createPin('ChIJ2_ua_zr_0YURRXldg2plimY'); //lilit
   }
 
   showCafes(){
+		const map = new google.maps.Map(document.getElementById('mapid'), {
+		  center: this.state.currPos,
+		  zoom: 13
+		});
     const mexico = places[0];
-    const allCafes = mexico.cafes.map(cafe => {
-      return cafe
-    })
-
       this.setState({
-        view: allCafes
-    })
+        mapObj: map,
+        view: mexico.cafes
+      })
+    		map.addListener('center_changed', () => {
+    			window.setTimeout(() => {
+    				this.setState({'currPos': {lat: map.getCenter().lat(), lng: map.getCenter().lng()}});
+    			}, 1000)
+    		})
+        function createPin (pinID) {
+          const infowindow = new google.maps.InfoWindow({
+              maxWidth: 350
+             });
+        const service = new google.maps.places.PlacesService(map);
+        service.getDetails({placeId: pinID }, function(place, status) {
+              if (status === google.maps.places.PlacesServiceStatus.OK) {
+                var marker = new google.maps.Marker({
+                    map: map,
+                    position: place.geometry.location
+                });
+                google.maps.event.addListener(marker, 'click', function() {
+                    infowindow.setContent('<div class="infoWindow">' + place.name +'</div>');
+                    infowindow.open(map, this);
+                });
+              }
+        });
+        }
+        createPin('ChIJ3f4lPyX_0YUR8lpHjtzEGxM');  //dosis
+        createPin('ChIJU5A2ITz_0YURsC60fDL48L0');  //cucurucho
+        createPin('ChIJV_W9HGr_0YURpcwR_-cpQWg');  //chiquitito
+        createPin('ChIJ05Z2Hzv_0YURcUimdYlMwkM'); //casa cardinal
+        createPin('ChIJj1fIpTj_0YURXyxFscmpylc'); //cafe b
 }
 
-  showPlaylist(){
+  showBudget(){
     const mexico = places[0];
       this.setState({
-        view: mexico.playlist
+        view: mexico.budget
     })
   }
 
@@ -148,7 +291,7 @@ export default class Mexico extends Component {
                 <li role="presentation"  onClick={this.showRestaurants}><a href='#/travel/central-america/mexico'>restaurants.</a></li>
                 <li role="presentation"  onClick={this.showBars}><a href='#/travel/central-america/mexico'>bars.</a></li>
                 <li role="presentation"  onClick={this.showCafes}><a href='#/travel/central-america/mexico'>cafes.</a></li>
-                <li role="presentation"  onClick={this.showPlaylist}><a href='#/travel/central-america/mexico'>playlist.</a></li>
+                <li role="presentation"  onClick={this.showBudget}><a href='#/travel/central-america/mexico'>budget.</a></li>
                 <li role="presentation"  onClick={this.showRead}><a href='#/travel/central-america/mexico'>read.</a></li>
 
 
