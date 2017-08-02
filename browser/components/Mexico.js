@@ -42,7 +42,25 @@ export default class Mexico extends Component {
     				this.setState({'currPos': {lat: map.getCenter().lat(), lng: map.getCenter().lng()}});
     			}, 1000)
     		})
-	}
+        function createPin (pinID) {
+        const service = new google.maps.places.PlacesService(map);
+        service.getDetails({placeId: pinID }, function(place, status) {
+              if (status === google.maps.places.PlacesServiceStatus.OK) {
+                var marker = new google.maps.Marker({
+                    map: map,
+                    position: place.geometry.location
+                });
+                // google.maps.event.addListener(marker, 'click', function() {
+                //     infowindow.setContent('<div class="infoWindow">' + place.name +'</div>');
+                //     infowindow.open(map, this);
+                // });
+              }
+        });
+        }
+      createPin('ChIJ3f4lPyX_0YUR8lpHjtzEGxM');  //dosis
+      createPin('ChIJU5A2ITz_0YURsC60fDL48L0');  //cucurucho
+      createPin('ChIJV_W9HGr_0YURpcwR_-cpQWg');  //chiquitito 
+	 }
 
   showOverview(){
     const mexico = places[0];
@@ -84,6 +102,7 @@ export default class Mexico extends Component {
     const allCafes = mexico.cafes.map(cafe => {
       return cafe
     })
+
       this.setState({
         view: allCafes
     })
