@@ -416,7 +416,23 @@ img [src="files/img/fuego.jpg"] {
  display: flex;
  justify-content: left;
  margin-left: 20px;
+}
 
+// .my-carousel{
+// 	width: 800px;
+// 	height: 560px;
+// 	max-width: 100%;
+// 	max-height: 100vh;
+// 	margin: 0 auto;
+// }
+
+#mexico-pics{
+  display: inline-block;
+  float:left;
+  margin: 0px;
+  padding: 0px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 /*READING PAGE*/

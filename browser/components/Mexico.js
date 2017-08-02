@@ -2,6 +2,13 @@ import React, { Component } from 'react';
 import { Link } from 'react-router';
 import Navbar from './Navbar';
 import places from '../../countries';
+// import Carousel from 'react-image-carousel';
+
+// let images = [
+//     'files/img/mexico1.jpg',
+//     'files/img/mexico2.jpg',
+//     'files/img/mexico3.jpg'
+// ];
 
 export default class Mexico extends Component {
   constructor(props) {
@@ -54,6 +61,8 @@ export default class Mexico extends Component {
   //   })
   // }
 
+
+
    render(){
           console.log('hi', this.state.view)
 
@@ -94,12 +103,23 @@ export default class Mexico extends Component {
               </div>
             </div>
 
+
+            <div className="row">
+              <div id="mexico-pics">
+              <img  className="col-md-4" src="files/img/mexico1.jpg" />
+              <img  className="col-md-4" src="files/img/mexico2.jpg" />
+              <img  className="col-md-4" src="files/img/mexico3.jpg" />
+              </div>
+            </div>
+
+
         </div>
 
       </div>
         )
   }
 }
+
 
 // {
 //   this.state.view.map(text => {
