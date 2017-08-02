@@ -4,11 +4,11 @@ import Navbar from './Navbar';
 import places from '../../countries';
 
 
-export default class Mexico extends Component {
+export default class Panama extends Component {
   constructor(props) {
 		super(props);
 		this.state = {
-			currPos: {lat: 19.4007, lng: -99.1573}, // default location: roma norte,
+			currPos: {lat: 8.953133, lng: -79.535756},
 			mapObj: {},
 			selectedMarker: {},
       view: []
@@ -30,12 +30,12 @@ export default class Mexico extends Component {
   componentDidMount() {
 		const map = new google.maps.Map(document.getElementById('mapid'), {
 		  center: this.state.currPos,
-		  zoom: 13
+		  zoom: 14
 		});
-    const mexico = places[0];
+    const panama = places[1];
       this.setState({
         mapObj: map,
-        view: mexico.overview
+        view: panama.overview
       })
     		map.addListener('center_changed', () => {
     			window.setTimeout(() => {
@@ -45,73 +45,70 @@ export default class Mexico extends Component {
 	}
 
   showOverview(){
-    const mexico = places[0];
+    const panama = places[1];
       this.setState({
-        view: mexico.overview
+        view: panama.overview
     })
   }
 
   showNeighborhoods(){
-    const mexico = places[0];
+    const panama = places[1];
       this.setState({
-        view: mexico.neighborhoods
+        view: panama.neighborhoods
     })
   }
 
   showActivities(){
-    const mexico = places[0];
+    const panama = places[1];
       this.setState({
-        view: mexico.activities
+        view: panama.activities
     })
   }
 
   showRestaurants(){
-    const mexico = places[0];
+    const panama = places[1];
       this.setState({
-        view: mexico.restaurants
+        view: panama.restaurants
     })
   }
 
   showBars(){
-    const mexico = places[0];
+    const panama = places[1];
       this.setState({
-        view: mexico.bars
+        view: panama.bars
     })
   }
 
   showCafes(){
-    const mexico = places[0];
-    const allCafes = mexico.cafes.map(cafe => {
-      return cafe
-    })
+    const panama = places[1];
       this.setState({
-        view: allCafes
+        view: panama.cafes
     })
   }
 
   showPlaylist(){
-    const mexico = places[0];
+    const panama = places[1];
       this.setState({
-        view: mexico.playlist
+        view: panama.playlist
     })
   }
 
   showRead(){
-    const mexico = places[0];
+    const panama = places[1];
       this.setState({
-        view: mexico.read
+        view: panama.read
     })
   }
 
    render(){
 
      return(
-       <div id="mexico-page">
+       <div id="panama-page">
          <Navbar />
           <div className="container-fluid">
             <div className="row">
               <div id="map-text" col-md-4>
-                esto es: mexico d.f.
+                esto es: casco viejo
               </div>
               <div id="back-text" col-md-4>
                 <Link to={`/travel/central-america`}>go elsewhere.</Link>
@@ -120,14 +117,14 @@ export default class Mexico extends Component {
             <div className="row">
               <div className="col-md-4"></div>
               <ul className="nav nav-tabs col-md-offset-5">
-                <li role="presentation"  onClick={this.showOverview}><a href='#/travel/central-america/mexico'>overview.</a></li>
-                <li role="presentation"  onClick={this.showNeighborhoods}><a href='#/travel/central-america/mexico'>neighborhoods.</a></li>
-                <li role="presentation"  onClick={this.showActivities}><a href='#/travel/central-america/mexico'>activities.</a></li>
-                <li role="presentation"  onClick={this.showRestaurants}><a href='#/travel/central-america/mexico'>restaurants.</a></li>
-                <li role="presentation"  onClick={this.showBars}><a href='#/travel/central-america/mexico'>bars.</a></li>
-                <li role="presentation"  onClick={this.showCafes}><a href='#/travel/central-america/mexico'>cafes.</a></li>
-                <li role="presentation"  onClick={this.showPlaylist}><a href='#/travel/central-america/mexico'>playlist.</a></li>
-                <li role="presentation"  onClick={this.showRead}><a href='#/travel/central-america/mexico'>read.</a></li>
+                <li role="presentation"  onClick={this.showOverview}><a href='#/travel/central-america/panama'>overview.</a></li>
+                <li role="presentation"  onClick={this.showNeighborhoods}><a href='#/travel/central-america/panama'>neighborhoods.</a></li>
+                <li role="presentation"  onClick={this.showActivities}><a href='#/travel/central-america/panama'>activities.</a></li>
+                <li role="presentation"  onClick={this.showRestaurants}><a href='#/travel/central-america/panama'>restaurants.</a></li>
+                <li role="presentation"  onClick={this.showBars}><a href='#/travel/central-america/panama'>bars.</a></li>
+                <li role="presentation"  onClick={this.showCafes}><a href='#/travel/central-america/panama'>cafes.</a></li>
+                <li role="presentation"  onClick={this.showPlaylist}><a href='#/travel/central-america/panama'>playlist.</a></li>
+                <li role="presentation"  onClick={this.showRead}><a href='#/travel/central-america/panama'>read.</a></li>
 
 
               </ul>
@@ -148,9 +145,9 @@ export default class Mexico extends Component {
 
             <div className="row">
               <div id="individual-country-pics">
-              <img  className="col-md-4" src="files/img/mexico1.jpg" />
-              <img  className="col-md-4" src="files/img/mexico2.jpg" />
-              <img  className="col-md-4" src="files/img/mexico3.jpg" />
+              <img  className="col-md-4" src="files/img/panama1.jpg" />
+              <img  className="col-md-4" src="files/img/panama2.jpg" />
+              <img  className="col-md-4" src="files/img/panama3.jpg" />
               </div>
             </div>
 

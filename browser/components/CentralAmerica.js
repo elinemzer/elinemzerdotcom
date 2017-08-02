@@ -26,63 +26,63 @@ export default function CentralAmerica () {
          </div>
 
          <div id="project-tile" className="col-xs-12 col-sm-6 col-md-6 col-lg-4">
-           <a className="thumbnail" href="https://www.youtube.com/watch?v=Ti1JUpZNuR8">
+           <Link className="thumbnail" to="/travel/central-america/belize">
              <img src="files/img/belize.jpg" />
              <div className="caption">
                <p id="project-tile-title">Belize</p>
                <p id="project-tile-subtitle">Some backpacker tips for Caye Caulker</p>
              </div>
-           </a>
+           </Link>
         </div>
 
         <div id="project-tile" className="col-xs-12 col-sm-6 col-md-6 col-lg-4">
-          <a className="thumbnail" href="https://www.youtube.com/watch?v=zSFJTfNxhyg">
+          <Link className="thumbnail" to="/travel/central-america/guatemala">
             <img src="files/img/guatemala.jpg" />
             <div className="caption">
               <p id="project-tile-title">Guatemala</p>
               <p id="project-tile-subtitle">An in-depth look at my favorite country in the region</p>
             </div>
-          </a>
+          </Link>
        </div>
 
        <div id="project-tile" className="col-xs-12 col-sm-6 col-md-6 col-lg-4">
-         <a className="thumbnail" href="https://piscesaquascaping.herokuapp.com/">
+         <Link className="thumbnail" to="/travel/central-america/nicaragua">
            <img src="files/img/nicaragua.jpg" />
            <div className="caption">
              <p id="project-tile-title">Nicaragua</p>
              <p id="project-tile-subtitle">Where all roads lead to Rivas</p>
            </div>
-         </a>
+         </Link>
       </div>
 
       <div id="project-tile" className="col-xs-12 col-sm-6 col-md-6 col-lg-4">
-        <a className="thumbnail" href="https://piscesaquascaping.herokuapp.com/">
+        <Link className="thumbnail" to="/travel/central-america/costarica">
           <img src="files/img/costarica.jpg" />
           <div className="caption">
             <p id="project-tile-title">Costa Rica</p>
             <p id="project-tile-subtitle">Staying local in the region's most well-traveled nation</p>
           </div>
-        </a>
+        </Link>
      </div>
 
      <div id="project-tile" className="col-xs-12 col-sm-6 col-md-6 col-lg-4">
-       <a className="thumbnail" href="https://piscesaquascaping.herokuapp.com/">
+       <Link className="thumbnail" to="/travel/central-america/panama">
          <img src="files/img/panama.jpg" />
          <div className="caption">
            <p id="project-tile-title">Panama</p>
            <p id="project-tile-subtitle">A walk around Casco Viejo</p>
          </div>
-       </a>
+       </Link>
     </div>
 
     <div id="project-tile" className="col-xs-12 col-sm-6 col-md-6 col-lg-4">
-      <a className="thumbnail" href="https://piscesaquascaping.herokuapp.com/">
+      <Link className="thumbnail" to="/travel/central-america/cuba">
         <img src="files/img/cuba.jpg" />
         <div className="caption">
           <p id="project-tile-title">Cuba</p>
           <p id="project-tile-subtitle">Things I wish I knew before I went to Cuba</p>
         </div>
-      </a>
+      </Link>
    </div>
 
 
