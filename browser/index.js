@@ -17,6 +17,8 @@ import CentralAmerica from './components/CentralAmerica';
 import SouthAmerica from './components/SouthAmerica';
 import Europe from './components/Europe';
 import Mexico from './components/Mexico';
+import Nicaragua from './components/Nicaragua';
+import Costarica from './components/Costarica';
 import Panama from './components/Panama';
 
 
@@ -35,6 +37,8 @@ ReactDOM.render(
         <Route path="/travel" component={Travel} />
           <Route path="/travel/central-america" component={CentralAmerica} />
           <Route path="/travel/central-america/mexico" component={Mexico} />
+          <Route path="/travel/central-america/nicaragua" component={Nicaragua} />
+          <Route path="/travel/central-america/costarica" component={Costarica} />
           <Route path="/travel/central-america/panama" component={Panama} />
 
 
