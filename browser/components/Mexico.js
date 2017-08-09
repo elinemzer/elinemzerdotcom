@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router';
 import Navbar from './Navbar';
-import places from '../../countries';
-
 
 export default class Mexico extends Component {
   constructor(props) {

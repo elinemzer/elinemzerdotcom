@@ -65,16 +65,6 @@ export default function CentralAmerica () {
         </Link>
      </div>
 
-     <div id="project-tile" className="col-xs-12 col-sm-6 col-md-6 col-lg-4">
-       <Link className="thumbnail" to="/travel/central-america/panama">
-         <img src="files/img/panama.jpg" />
-         <div className="caption">
-           <p id="project-tile-title">Panama</p>
-           <p id="project-tile-subtitle">A walk around Casco Viejo</p>
-         </div>
-       </Link>
-    </div>
-
     <div id="project-tile" className="col-xs-12 col-sm-6 col-md-6 col-lg-4">
       <Link className="thumbnail" to="/travel/central-america/cuba">
         <img src="files/img/cuba.jpg" />

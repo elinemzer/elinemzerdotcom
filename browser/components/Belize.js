@@ -1,15 +1,14 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router';
 import Navbar from './Navbar';
-import places from '../../countries';
 
 
 export default class Belize extends Component {
   constructor(props) {
 		super(props);
 		this.state = {
-			currPos: {lat: 17.7612, lng: -88.0277}, // default location: roma norte,
-			mapObj: {},
+			currPos: {lat: 17.7612, lng: -88.0277}, // default location: caye caulker
+      mapObj: {},
 			selectedMarker: {},
       view: []
 		}
@@ -18,10 +17,6 @@ export default class Belize extends Component {
 		this.componentDidMount = this.componentDidMount.bind(this);
     this.showOverview = this.showOverview.bind(this);
     this.showActivities = this.showActivities.bind(this);
-    this.showRestaurants = this.showRestaurants.bind(this);
-    this.showBars = this.showBars.bind(this);
-    this.showNeighborhoods = this.showNeighborhoods.bind(this);
-    this.showCafes = this.showCafes.bind(this);
     this.showBudget = this.showBudget.bind(this);
     this.showRead = this.showRead.bind(this);
 
@@ -32,34 +27,16 @@ export default class Belize extends Component {
 		  center: this.state.currPos,
 		  zoom: 13
 		});
-    const belize = places[0];
+
       this.setState({
         mapObj: map,
-        view: belize.overview
-      })
-    		map.addListener('center_changed', () => {
-    			window.setTimeout(() => {
-    				this.setState({'currPos': {lat: map.getCenter().lat(), lng: map.getCenter().lng()}});
-    			}, 1000)
-    		})
-	 }
-
-  showOverview(){
-    const belize = places[0];
-      this.setState({
-        view: belize.overview
-    })
-  }
-
-  showNeighborhoods(){
-    const map = new google.maps.Map(document.getElementById('mapid'), {
-		  center: this.state.currPos,
-		  zoom: 13
-		});
-    const belize = places[0];
-      this.setState({
-        mapObj: map,
-        view: belize.neighborhoods
+        view:
+        <div>
+          <p>With its tropical vibes, reggae music and english-speaking populace, Belize feels a lot more like the Caribbean then the rest of its Central American neighbors.</p>
+          <p>Formerly British Honduras, it became its own country in 1981, and has a population of around 400,000, roughly the size of Oakland. I spent a week in Caye Caulker, which is often the first or last stop on the Central American backpacker trail. Other popular spots are Ambergris Caye (more upscale and resort-y), Hopkins (a small town in the south), and San Ignacio (a town in the west famous for its caves).</p>
+          <p><strong>Getting in: By air or bus you'll have to come through Belize City, which is probably not a place you'll want to hang around for too long. Boats to the Cayes can be found on the main docs in the downtown area and leave hourly.</strong></p>
+          <p><strong>Must Do's: </strong>Chill at the Split, read a novel, go snorkeling </p>
+       </div>
       })
     		map.addListener('center_changed', () => {
     			window.setTimeout(() => {
@@ -84,199 +61,179 @@ export default class Belize extends Component {
               }
         });
       }
-      createPin('ChIJ4zXmiUT_0YUR57jJi24HHO0'); //la condesa
-      createPin('ChIJzeSi8jn_0YURMiXDZ-gzmi0'); //la roma
-      createPin('ChIJ-UNIbQMC0oURdqnTwDJ30-Q'); //polanco
-      createPin('ChIJAd0jvtz_0YURkB_9OyD0xd4'); //coyoacan
-      createPin('ChIJ8bh9yyz50YURlL2cFjXnr98'); //centro
-    }
+      createPin('ChIJu0QJq-ONXI8RAwfeP7n4Aso'); //the split
+      createPin('ChIJ8bzBZeSNXI8RPauZO9gW4OI'); //bellas
+      createPin('ChIJx3IbQO-NXI8RclgLFqZY0GQ'); //reggaebar
+	 }
+
+  showOverview(){
+
+      this.setState({
+        view:
+        <div>
+          <p>With its tropical vibes, reggae music and english-speaking populace, Belize feels a lot more like the Caribbean then the rest of its Central American neighbors.</p>
+          <p>Formerly British Honduras, it became its own country in 1981, and has a population of around 400,000, roughly the size of Oakland. I spent a week in Caye Caulker, which is often the first or last stop on the Central American backpacker trail. Other popular spots are Ambergris Caye (more upscale and resort-y), Hopkins (a small town in the south), and San Ignacio (a town in the west famous for its caves).</p>
+          <p><strong>Getting in: By air or bus you'll have to come through Belize City, which is probably not a place you'll want to hang around for too long. Boats to the Cayes can be found on the main docs in the downtown area and leave hourly.</strong></p>
+          <p><strong>Must Do's: </strong>Chill at the Split, read a novel, go snorkeling </p>
+       </div>
+    })
+    map.addListener('center_changed', () => {
+      window.setTimeout(() => {
+        this.setState({'currPos': {lat: map.getCenter().lat(), lng: map.getCenter().lng()}});
+      }, 1000)
+    })
+    function createPin (pinID) {
+      const infowindow = new google.maps.InfoWindow({
+          maxWidth: 350
+         });
+    const service = new google.maps.places.PlacesService(map);
+    service.getDetails({placeId: pinID }, function(place, status) {
+          if (status === google.maps.places.PlacesServiceStatus.OK) {
+            var marker = new google.maps.Marker({
+                map: map,
+                position: place.geometry.location
+            });
+            google.maps.event.addListener(marker, 'click', function() {
+                infowindow.setContent('<div class="infoWindow">' + place.name +'</div>');
+                infowindow.open(map, this);
+            });
+          }
+    });
+  }
+  createPin('ChIJu0QJq-ONXI8RAwfeP7n4Aso'); //the split
+  createPin('ChIJ8bzBZeSNXI8RPauZO9gW4OI'); //bellas
+  createPin('ChIJx3IbQO-NXI8RclgLFqZY0GQ'); //reggaebar
+  }
 
   showActivities(){
     const map = new google.maps.Map(document.getElementById('mapid'), {
 		  center: this.state.currPos,
 		  zoom: 13
 		});
-    const belize = places[0];
+
       this.setState({
         mapObj: map,
-        view: belize.activities
+        view:
+        <div>
+          <p>Caye Caulker is chilllllll... like there's not much to do here. The whole island takes about 20 minutes to walk across, and there are a small handfull of different hostel options, including the notoriously-named Dirty McNasty's. We stayed at <strong>Bella's</strong> a cute place with lots of hammocks and cold showers.</p>
+          <p>The main thing to do during the day is hang out at <strong> The Split, </strong> a dock and bar where the island splits in two. Great place to post up with a book and take a dip in the water every now and then. </p>
+          <p>There are fresh fish stands all over the place, a number of little cafes and like two bars. We had a few fun nights at the aptly named <strong> ReggaeBar. </strong></p>
+        </div>
       })
-    		map.addListener('center_changed', () => {
-    			window.setTimeout(() => {
-    				this.setState({'currPos': {lat: map.getCenter().lat(), lng: map.getCenter().lng()}});
-    			}, 1000)
-    		})
-        function createPin (pinID) {
-          const infowindow = new google.maps.InfoWindow({
-              maxWidth: 350
-             });
-        const service = new google.maps.places.PlacesService(map);
-        service.getDetails({placeId: pinID }, function(place, status) {
-              if (status === google.maps.places.PlacesServiceStatus.OK) {
-                var marker = new google.maps.Marker({
-                    map: map,
-                    position: place.geometry.location
-                });
-                google.maps.event.addListener(marker, 'click', function() {
-                    infowindow.setContent('<div class="infoWindow">' + place.name +'</div>');
-                    infowindow.open(map, this);
-                });
-              }
-        });
-      }
-      createPin('ChIJgR1EcT7_0YUREAsbqALaMjc'); //mercado medellin
-      createPin('ChIJOz-6AMT_0YURofTM9_ekAWI'); //frida kahlo museum
-      createPin('ChIJ_6pkSM3-0YURDDaRslwM_0w'); //zocalo
-      createPin('ChIJScjIILQB0oURJMVub-MaI4Q'); //anthropology museum
-      createPin('ChIJb5QzwED_0YURQCgMF85waLs'); //hipodromo
-      createPin('ChIJb67ro-j_0YURes-LYhd6tH8'); //coyoacan st
-
-
+      map.addListener('center_changed', () => {
+        window.setTimeout(() => {
+          this.setState({'currPos': {lat: map.getCenter().lat(), lng: map.getCenter().lng()}});
+        }, 1000)
+      })
+      function createPin (pinID) {
+        const infowindow = new google.maps.InfoWindow({
+            maxWidth: 350
+           });
+      const service = new google.maps.places.PlacesService(map);
+      service.getDetails({placeId: pinID }, function(place, status) {
+            if (status === google.maps.places.PlacesServiceStatus.OK) {
+              var marker = new google.maps.Marker({
+                  map: map,
+                  position: place.geometry.location
+              });
+              google.maps.event.addListener(marker, 'click', function() {
+                  infowindow.setContent('<div class="infoWindow">' + place.name +'</div>');
+                  infowindow.open(map, this);
+              });
+            }
+      });
     }
-
-  showRestaurants(){
-		const map = new google.maps.Map(document.getElementById('mapid'), {
-		  center: this.state.currPos,
-		  zoom: 13
-		});
-    const belize = places[0];
-      this.setState({
-        mapObj: map,
-        view: belize.restaurants
-      })
-    		map.addListener('center_changed', () => {
-    			window.setTimeout(() => {
-    				this.setState({'currPos': {lat: map.getCenter().lat(), lng: map.getCenter().lng()}});
-    			}, 1000)
-    		})
-        function createPin (pinID) {
-          const infowindow = new google.maps.InfoWindow({
-              maxWidth: 350
-             });
-        const service = new google.maps.places.PlacesService(map);
-        service.getDetails({placeId: pinID }, function(place, status) {
-              if (status === google.maps.places.PlacesServiceStatus.OK) {
-                var marker = new google.maps.Marker({
-                    map: map,
-                    position: place.geometry.location
-                });
-                google.maps.event.addListener(marker, 'click', function() {
-                    infowindow.setContent('<div class="infoWindow">' + place.name +'</div>');
-                    infowindow.open(map, this);
-                });
-              }
-        });
-      }
-      createPin('ChIJez8vvy__0YURP0rx5WhEig4'); //contramar
-      createPin('ChIJZeIEDEH_0YURpQ_UHx0ZTTo'); //tacos hola
-      createPin('ChIJ5RLH1D7_0YURSMJSVlhAGCw'); //mercado roma
-      createPin('ChIJsyICZBb_0YURFFEjAh6qYBo'); //taqueria los parados
-      createPin('ChIJQVOX8Dr_0YURMvf_XgmgeCs'); //taqueria alvaro obregon
-      createPin('ChIJie02fDv_0YURKP-IhZY_VHQ'); //la chicha
-}
-  showBars(){
-		const map = new google.maps.Map(document.getElementById('mapid'), {
-		  center: this.state.currPos,
-		  zoom: 13
-		});
-    const belize = places[0];
-      this.setState({
-        mapObj: map,
-        view: belize.bars
-      })
-    		map.addListener('center_changed', () => {
-    			window.setTimeout(() => {
-    				this.setState({'currPos': {lat: map.getCenter().lat(), lng: map.getCenter().lng()}});
-    			}, 1000)
-    		})
-        function createPin (pinID) {
-          const infowindow = new google.maps.InfoWindow({
-              maxWidth: 350
-             });
-        const service = new google.maps.places.PlacesService(map);
-        service.getDetails({placeId: pinID }, function(place, status) {
-              if (status === google.maps.places.PlacesServiceStatus.OK) {
-                var marker = new google.maps.Marker({
-                    map: map,
-                    position: place.geometry.location
-                });
-                google.maps.event.addListener(marker, 'click', function() {
-                    infowindow.setContent('<div class="infoWindow">' + place.name +'</div>');
-                    infowindow.open(map, this);
-                });
-              }
-        });
-        }
-        createPin('ChIJX03s9zr_0YURHdcjFe9hbiE'); //limantour
-        createPin('ChIJwYsplTv_0YURAjGjBCo9olU'); //balmori
-        createPin('ChIJb0o-MkH_0YUReHcA77q4Mhc'); //la clandestina
-        createPin('ChIJxRZMnzb_0YURMVE1PsNPolo'); //hanky panky
-        createPin('ChIJ2_ua_zr_0YURRXldg2plimY'); //lilit
-  }
-
-  showCafes(){
-		const map = new google.maps.Map(document.getElementById('mapid'), {
-		  center: this.state.currPos,
-		  zoom: 13
-		});
-    const belize = places[0];
-      this.setState({
-        mapObj: map,
-        view: belize.cafes
-      })
-    		map.addListener('center_changed', () => {
-    			window.setTimeout(() => {
-    				this.setState({'currPos': {lat: map.getCenter().lat(), lng: map.getCenter().lng()}});
-    			}, 1000)
-    		})
-        function createPin (pinID) {
-          const infowindow = new google.maps.InfoWindow({
-              maxWidth: 350
-             });
-        const service = new google.maps.places.PlacesService(map);
-        service.getDetails({placeId: pinID }, function(place, status) {
-              if (status === google.maps.places.PlacesServiceStatus.OK) {
-                var marker = new google.maps.Marker({
-                    map: map,
-                    position: place.geometry.location
-                });
-                google.maps.event.addListener(marker, 'click', function() {
-                    infowindow.setContent('<div class="infoWindow">' + place.name +'</div>');
-                    infowindow.open(map, this);
-                });
-              }
-        });
-        }
-        createPin('ChIJ3f4lPyX_0YUR8lpHjtzEGxM');  //dosis
-        createPin('ChIJU5A2ITz_0YURsC60fDL48L0');  //cucurucho
-        createPin('ChIJV_W9HGr_0YURpcwR_-cpQWg');  //chiquitito
-        createPin('ChIJ05Z2Hzv_0YURcUimdYlMwkM'); //casa cardinal
-        createPin('ChIJj1fIpTj_0YURXyxFscmpylc'); //cafe b
-}
+    createPin('ChIJu0QJq-ONXI8RAwfeP7n4Aso'); //the split
+    createPin('ChIJ8bzBZeSNXI8RPauZO9gW4OI'); //bellas
+    createPin('ChIJx3IbQO-NXI8RclgLFqZY0GQ'); //reggaebar
+     }
 
   showBudget(){
-    const belize = places[0];
+
       this.setState({
-        view: belize.budget
+        view:
+        <div>
+          <p><em>I was there in July 2015, Belize dollar was fixed at 2:1 to the US dollar. </em></p>
+            <p><strong>Hostel Bed: </strong> $8-$10/night</p>
+            <p><strong>Nice dinner of fresh fish: </strong> $15 </p>
+            <p><strong>Bottle of Belikan Beer, bar: </strong>$2.50</p>
+            <p><strong>Water Taxi from Belize City: </strong> $10 </p>
+        </div>
     })
+    map.addListener('center_changed', () => {
+      window.setTimeout(() => {
+        this.setState({'currPos': {lat: map.getCenter().lat(), lng: map.getCenter().lng()}});
+      }, 1000)
+    })
+    function createPin (pinID) {
+      const infowindow = new google.maps.InfoWindow({
+          maxWidth: 350
+         });
+    const service = new google.maps.places.PlacesService(map);
+    service.getDetails({placeId: pinID }, function(place, status) {
+          if (status === google.maps.places.PlacesServiceStatus.OK) {
+            var marker = new google.maps.Marker({
+                map: map,
+                position: place.geometry.location
+            });
+            google.maps.event.addListener(marker, 'click', function() {
+                infowindow.setContent('<div class="infoWindow">' + place.name +'</div>');
+                infowindow.open(map, this);
+            });
+          }
+    });
+  }
+  createPin('ChIJu0QJq-ONXI8RAwfeP7n4Aso'); //the split
+  createPin('ChIJ8bzBZeSNXI8RPauZO9gW4OI'); //bellas
+  createPin('ChIJx3IbQO-NXI8RclgLFqZY0GQ'); //reggaebar
   }
 
   showRead(){
-    const belize = places[0];
+
       this.setState({
-        view: belize.read
+        view:
+        <div>
+          <p><strong><a href="https://www.wired.com/2012/12/ff-john-mcafees-last-stand/">John McAfee's Last Stand </a></strong></p>
+          <p><strong><a href="https://www.nytimes.com/2015/05/24/magazine/the-lonely-fight-against-belizes-antigay-laws.html">The Lonely Fight Against Belize's Anti-gay laws </a></strong></p>
+        </div>
     })
+    map.addListener('center_changed', () => {
+      window.setTimeout(() => {
+        this.setState({'currPos': {lat: map.getCenter().lat(), lng: map.getCenter().lng()}});
+      }, 1000)
+    })
+    function createPin (pinID) {
+      const infowindow = new google.maps.InfoWindow({
+          maxWidth: 350
+         });
+    const service = new google.maps.places.PlacesService(map);
+    service.getDetails({placeId: pinID }, function(place, status) {
+          if (status === google.maps.places.PlacesServiceStatus.OK) {
+            var marker = new google.maps.Marker({
+                map: map,
+                position: place.geometry.location
+            });
+            google.maps.event.addListener(marker, 'click', function() {
+                infowindow.setContent('<div class="infoWindow">' + place.name +'</div>');
+                infowindow.open(map, this);
+            });
+          }
+    });
+  }
+  createPin('ChIJu0QJq-ONXI8RAwfeP7n4Aso'); //the split
+  createPin('ChIJ8bzBZeSNXI8RPauZO9gW4OI'); //bellas
+  createPin('ChIJx3IbQO-NXI8RclgLFqZY0GQ'); //reggaebar
   }
 
    render(){
 
-     return(
+     return (
        <div id="belize-page">
          <Navbar />
           <div className="container-fluid">
             <div className="row">
               <div id="map-text" col-md-4>
-                esto es: belize d.f.
+                esto es: caye caulker, belize
               </div>
               <div id="back-text" col-md-4>
                 <Link to={`/travel/central-america`}>go elsewhere.</Link>
@@ -286,11 +243,7 @@ export default class Belize extends Component {
               <div className="col-md-4"></div>
               <ul className="nav nav-tabs col-md-offset-5">
                 <li role="presentation"  onClick={this.showOverview}><a href='#/travel/central-america/belize'>overview.</a></li>
-                <li role="presentation"  onClick={this.showNeighborhoods}><a href='#/travel/central-america/belize'>neighborhoods.</a></li>
-                <li role="presentation"  onClick={this.showActivities}><a href='#/travel/central-america/belize'>activities.</a></li>
-                <li role="presentation"  onClick={this.showRestaurants}><a href='#/travel/central-america/belize'>restaurants.</a></li>
-                <li role="presentation"  onClick={this.showBars}><a href='#/travel/central-america/belize'>bars.</a></li>
-                <li role="presentation"  onClick={this.showCafes}><a href='#/travel/central-america/belize'>cafes.</a></li>
+                <li role="presentation"  onClick={this.showActivities}><a href='#/travel/central-america/belize'>what to know.</a></li>
                 <li role="presentation"  onClick={this.showBudget}><a href='#/travel/central-america/belize'>budget.</a></li>
                 <li role="presentation"  onClick={this.showRead}><a href='#/travel/central-america/belize'>read.</a></li>
 
@@ -313,9 +266,9 @@ export default class Belize extends Component {
 
             <div className="row">
               <div id="individual-country-pics">
+              <img  className="col-md-4" src="files/img/belize.jpg" />
               <img  className="col-md-4" src="files/img/belize1.jpg" />
               <img  className="col-md-4" src="files/img/belize2.jpg" />
-              <img  className="col-md-4" src="files/img/belize3.jpg" />
               </div>
             </div>
 

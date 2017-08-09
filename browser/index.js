@@ -17,10 +17,11 @@ import CentralAmerica from './components/CentralAmerica';
 import SouthAmerica from './components/SouthAmerica';
 import Europe from './components/Europe';
 import Mexico from './components/Mexico';
+import Belize from './components/Belize';
+import Guatemala from './components/Guatemala'
 import Nicaragua from './components/Nicaragua';
 import Costarica from './components/Costarica';
-import Panama from './components/Panama';
-
+import Cuba from './components/Cuba';
 
 
 ReactDOM.render(
@@ -37,13 +38,13 @@ ReactDOM.render(
         <Route path="/travel" component={Travel} />
           <Route path="/travel/central-america" component={CentralAmerica} />
           <Route path="/travel/central-america/mexico" component={Mexico} />
+          <Route path="/travel/central-america/belize" component={Belize} />
+          <Route path="/travel/central-america/guatemala" component={Guatemala} />
           <Route path="/travel/central-america/nicaragua" component={Nicaragua} />
           <Route path="/travel/central-america/costarica" component={Costarica} />
-          <Route path="/travel/central-america/panama" component={Panama} />
-
-
-          <Route path="/travel/south-america" component={SouthAmerica} />
-          <Route path="/travel/europe" component={Europe} />
+          <Route path="/travel/central-america/cuba" component={Cuba} />
+        <Route path="/travel/south-america" component={SouthAmerica} />
+        <Route path="/travel/europe" component={Europe} />
 	  </Router>
   </Provider>,
   document.getElementById('app') // make sure this is the same as the id of the div in your index.html
