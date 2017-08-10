@@ -180,6 +180,7 @@ img[src="files/img/IMG_8109.jpg"] {
 
 img {
   width: 100%;
+  padding-bottom: 20px;
 }
 
 #writing-title {
@@ -518,4 +519,5 @@ ul {
     padding: 20px;
     width: 800px;
     height: 515px;
+    overflow-y: scroll;
 }
