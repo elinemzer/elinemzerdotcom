@@ -16377,58 +16377,151 @@ class Guatemala extends __WEBPACK_IMPORTED_MODULE_0_react__["Component"] {
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           'p',
           null,
-          'There are tons of museums, particularly for those interested in art, but in just a few days I would\'nt miss the ',
-          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            'strong',
-            null,
-            'Frida Kahlo museum'
-          ),
-          ' in Coyoacan or the incredible and massive ',
-          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            'strong',
-            null,
-            ' Anthropology museum '
-          ),
-          ' located in the huge Bosques del Chapultepec park.'
+          'Set in a valley surrounded by the Agua, Fuego, and Acatenango Volcanos, Antigua is just 40 minutes west of the bustle and grit of Guatemala City but oozes a magical charm that captivates travelers from around the globe. It\'s a small town on a roughly 10x10 grid of colorful cobblestone streets, known as a hub for Spanish schools and coffee enthusiasts.'
         ),
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           'p',
           null,
-          'In Centro, start at the impressive ',
-          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            'strong',
-            null,
-            ' Zocalo '
-          ),
-          ' and work your way to the Museo de Bellas Artes. '
+          'I\'ve spent multiple months here over three visits and find it to be a relaxing place for a yearly refresh. Due to the Central Time Zone, year-round spring-like weather, loads of nice cafes and general first-world comforts, its an attractive spot for digital nomads as well. '
         ),
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           'p',
           null,
-          'In the month I lived in the city though, my single favorite thing to do was walk or jog around the ',
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             'strong',
             null,
-            ' Calle Amsterdam '
+            ' To Do: '
           ),
-          ' loop in La Condesa, an incredibly beautiful tree-lined circular street that takes about 25 minutes to walk around.'
+          'Take a Spanish Class! There are loads of schools scattered around town, all offerring some version of 20hrs a week, one-on-one conversationsl spanish lessons. My buddy and I had a good experience with ',
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            'strong',
+            null,
+            ' Antigue\xF1a Academy,'
+          ),
+          ' although I think the individual teacher you are paired with matters more than the school itself.'
         ),
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           'p',
           null,
-          'If you\'re into street markets, ',
+          'There\'s a short hike on the north side of town up to ',
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             'strong',
             null,
-            'Mercado Medellin'
+            'Cerro de la Cruz'
           ),
-          ' in Roma Sur and the ',
+          ' which gives you a nice overview of the town and volcanos to the south. An even better view is at ',
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             'strong',
             null,
-            'central market in Coyoacan'
+            'Earth Lodge,'
           ),
-          ' are both great. '
+          ' an awesome place to hang out in the afternoons. It\'s an eco-lodge located in the hills above town that can be reached by booking a shuttle from El Hostal on Avenida 1a. Great for sunset happy hour and family-style dinners.'
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          'p',
+          null,
+          'The local market is on the west side of town and has great produce and lots of other fun informal economy-type goods. For a more upscale market experience, head to ',
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            'strong',
+            null,
+            'Caoba Farms'
+          ),
+          ' on Saturdays from about 10-4 there is great live music and lots of food. Not too far from Caoba is a funky old swimming pool area called El Pilar in San Cristobal el bajo. It\'s not really on any map but is fun on hot days, just ask locals for la piscina and you\'ll find it.'
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          'p',
+          null,
+          'A trip to Guatemala is not complete without hiking a Volcano, and there are two good options out of Antigua. Pacaya is a half-day, easy hike that lots of tour operators offer for $8-10. For the more adventurous, Acatenango is an overnight adventure, that on a clear night is absolutely spectacular. DRESS WARM! BUY CLOTHES AT THE MARKET! IT IS FREEZING AT THE TOP OF ACATENANGO! That said, I highly recommend doing it.'
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          'p',
+          null,
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            'strong',
+            null,
+            'Restaurants: '
+          ),
+          'For a small town, there are tons of options from all over the world. I typically start my days at Y tu Pi\xF1a Tambien, across from No Se on 1st Avenida. For lunch hour, my go-to is the rotisserie chicken at ',
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            'strong',
+            null,
+            'Rincon Tipico.'
+          ),
+          ' For dinner, ',
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            'strong',
+            null,
+            'Porque No?'
+          ),
+          ' is my favorite joint in town. ',
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            'strong',
+            null,
+            'Toku Baru'
+          ),
+          ', a funny indonesian place is also a great affordable option.'
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          'p',
+          null,
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            'strong',
+            null,
+            'Cafes: '
+          ),
+          'There are tons. My favorites are ',
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            'strong',
+            null,
+            'Refuge'
+          ),
+          ' (6th Avenida), ',
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            'strong',
+            null,
+            'Fat Cat'
+          ),
+          ' (4th Calle), ',
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            'strong',
+            null,
+            'Estudio'
+          ),
+          ' (2nd Avenida), and ',
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            'strong',
+            null,
+            'La Terraza'
+          ),
+          ' (5th Avenida).'
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          'p',
+          null,
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            'strong',
+            null,
+            'Bars: '
+          ),
+          'Although some nights might feel like you\'re in Bed Stuy and not Central America, ',
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            'strong',
+            null,
+            'Cafe No Se'
+          ),
+          ' remains a classic. Candlelit vibes, live music every night and flowing mezcal make this my favorite spot in town. ',
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            'strong',
+            null,
+            'The Snug'
+          ),
+          ' is a tiny irish pub that is also fun most nights. ',
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            'strong',
+            null,
+            'El Barrio'
+          ),
+          ' is a newer collection of four or five bars in one patio area, good for watching big sports games. If you\'re into hanging with the backpacker/hostel crowd, try Reilly\'s on Monday, Las Vibras on Wednesdays/Saturdays, and Lucky Rabbit | Mono Loco on other nights.'
         )
       )
     });
@@ -16841,7 +16934,22 @@ class Guatemala extends __WEBPACK_IMPORTED_MODULE_0_react__["Component"] {
             { id: 'individual-country-pics' },
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { className: 'col-md-4', src: 'files/img/guatemala1.jpg' }),
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { className: 'col-md-4', src: 'files/img/guatemala2.jpg' }),
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { className: 'col-md-4', src: 'files/img/guatemala3.jpg' })
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { className: 'col-md-4', src: 'files/img/guatemala3.jpg' }),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { className: 'col-md-4', src: 'files/img/guatemala4.jpg' }),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { className: 'col-md-4', src: 'files/img/guatemala5.jpg' }),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { className: 'col-md-4', src: 'files/img/guatemala6.jpg' }),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { className: 'col-md-4', src: 'files/img/guatemala7.jpg' }),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { className: 'col-md-4', src: 'files/img/guatemala8.jpg' }),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { className: 'col-md-4', src: 'files/img/guatemala9.jpg' }),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { className: 'col-md-4', src: 'files/img/guatemala10.jpg' }),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { className: 'col-md-4', src: 'files/img/guatemala11.jpg' }),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { className: 'col-md-4', src: 'files/img/guatemala12.jpg' }),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { className: 'col-md-4', src: 'files/img/guatemala13.jpg' }),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { className: 'col-md-4', src: 'files/img/guatemala14.jpg' }),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { className: 'col-md-4', src: 'files/img/guatemala15.jpg' }),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { className: 'col-md-4', src: 'files/img/guatemala16.jpg' }),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { className: 'col-md-4', src: 'files/img/guatemala17.jpg' }),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { className: 'col-md-4', src: 'files/img/guatemala18.jpg' })
           )
         )
       )
@@ -19702,7 +19810,7 @@ exports = module.exports = __webpack_require__(155)(undefined);
 
 
 // module
-exports.push([module.i, "/*HOME PAGE*/\n#home-page {\n  width: 100vw;\n  height: 100vh;\n  position: fixed; }\n\nimg [src=\"files/img/IMG_8779.jpg\"] {\n  width: 100vw;\n  height: 100vh;\n  top: 0;\n  left: 0; }\n\n#aboutlocator {\n  position: absolute;\n  visibility: visible;\n  left: 80px;\n  top: 135px;\n  z-index: 1; }\n\n#writinglocator {\n  position: absolute;\n  visibility: visible;\n  left: 160px;\n  top: 135px;\n  z-index: 1; }\n\n#travellocator {\n  position: absolute;\n  visibility: visible;\n  left: 255px;\n  top: 135px;\n  z-index: 1; }\n\n#projectslocator {\n  position: absolute;\n  visibility: visible;\n  left: 340px;\n  top: 135px;\n  z-index: 1; }\n\n#readinglocator {\n  position: absolute;\n  visibility: visible;\n  left: 450px;\n  top: 134px;\n  z-index: 1; }\n\n#homelinks {\n  color: white;\n  font-size: 24px; }\n\n#rectangle {\n  position: absolute;\n  visibility: visible;\n  right: 0px;\n  top: 315px;\n  z-index: 1;\n  background-color: #333333; }\n\n#rectanglefont {\n  font-family: \"Lucida Grande\", Tahoma;\n  font-size: 20px;\n  font-weight: lighter;\n  font-variant: normal;\n  text-transform: uppercase;\n  color: white;\n  letter-spacing: 0.3em; }\n\n#home-resume {\n  color: dimgray;\n  max-width: 500px;\n  position: absolute;\n  bottom: 40%;\n  left: 86%; }\n\n/*NAVBAR PAGE */\n#navbarlinks {\n  color: black;\n  font-size: 16px;\n  font-family: \"Courier New\", sans-serif; }\n\n.nav-stacked {\n  position: absolute;\n  visibility: visible;\n  left: 630px;\n  top: 5px; }\n\n/*ABOUT PAGE*/\n#about-page {\n  height: 100vh;\n  width: 100vw;\n  background-color: #F0F8FF; }\n\n#about-text {\n  color: dimgray;\n  max-width: 500px;\n  font-size: 15px;\n  margin-top: 35px; }\n\n#about-title {\n  z-index: 1;\n  font-family: \"Lucida Grande\", Tahoma;\n  font-size: 34px;\n  font-weight: lighter;\n  font-variant: normal;\n  text-transform: uppercase;\n  color: black;\n  letter-spacing: 0.1em;\n  display: flex;\n  justify-content: center;\n  margin-top: 80px;\n  margin-bottom: 30px;\n  margin-left: 30px; }\n\n#about-subtitle {\n  z-index: 1;\n  font-family: \"Lucida Grande\", Tahoma;\n  font-size: 24px;\n  font-weight: lighter;\n  font-variant: normal;\n  text-transform: uppercase;\n  color: black;\n  letter-spacing: 0.1em; }\n\n#resume {\n  color: dimgray;\n  max-width: 500px;\n  padding-bottom: 200px; }\n\nimg[src=\"files/img/IMG_8109.jpg\"] {\n  height: auto;\n  min-width: 350px;\n  min-height: 350px;\n  padding-left: 150px; }\n\n/*WRITING PAGE*/\n.default-container {\n  color: #F0F8FF;\n  margin: 180px 5%;\n  min-height: 46vh; }\n\n#writing-page {\n  min-height: 100%;\n  min-width: 1024px;\n  min-height: 780px;\n  width: 100%;\n  height: 100%;\n  top: 0;\n  left: 0;\n  background-color: #F0F8FF;\n  z-index: 2; }\n\n.thumbnail {\n  position: relative;\n  margin-top: 80px; }\n\nimg {\n  width: 100%; }\n\n#writing-title {\n  z-index: 1;\n  font-family: \"Lucida Grande\", Tahoma;\n  font-size: 26px;\n  font-weight: lighter;\n  font-variant: normal;\n  text-transform: uppercase;\n  color: black;\n  letter-spacing: 0.1em;\n  margin-top: 14%;\n  margin-left: 18%;\n  padding-bottom: 5%; }\n\n#article-tile a {\n  margin-top: 15px;\n  background: rgba(255, 255, 255, 0.3);\n  border: 0px;\n  text-decoration: none;\n  box-shadow: 3px 3px 50px rgba(0, 0, 0, 0.3);\n  min-height: 310px; }\n\n#article-tile a:hover {\n  background: rgba(255, 255, 255, 0.3);\n  border: 0px;\n  font-family: 'Lucinda Grande', sans-serif; }\n\n#article-tile a p {\n  color: black; }\n\n#article-tile-title {\n  font-size: 1.5em;\n  text-align: center;\n  font-family: 'Lucinda Grande', sans-serif;\n  text-transform: uppercase;\n  margin-bottom: 0px;\n  margin-top: 10px; }\n\n#article-tile-subtitle {\n  font-size: 1.5;\n  text-align: center;\n  font-family: 'Lucinda Grande', sans-serif;\n  margin-bottom: 0px;\n  margin-top: 0px; }\n\n/*TRAVEL PAGE*/\n#travel-page {\n  width: 100vw;\n  height: 100vh;\n  position: fixed; }\n\nimg [src=\"files/img/fuego.jpg\"] {\n  width: 100vw;\n  height: 100vh;\n  top: 0;\n  left: 0; }\n\n#travel-caption {\n  z-index: 1;\n  font-family: \"Lucida Grande\", Tahoma;\n  font-size: 16px;\n  font-weight: lighter;\n  font-variant: normal;\n  color: black;\n  letter-spacing: 0.1em;\n  position: absolute;\n  right: 30px;\n  bottom: 3px;\n  font-style: italic; }\n\n#travel-text {\n  z-index: 1;\n  font-family: \"Lucida Grande\", Tahoma;\n  font-size: 72px;\n  font-variant: normal;\n  color: black;\n  letter-spacing: 0.1em;\n  position: absolute;\n  right: 32%;\n  top: 46%;\n  font-weight: bold; }\n\n#central-america-title {\n  z-index: 1;\n  font-family: \"Lucida Grande\", Tahoma;\n  font-size: 26px;\n  font-weight: lighter;\n  font-variant: normal;\n  text-transform: uppercase;\n  color: black;\n  letter-spacing: 0.1em;\n  margin-top: 14%;\n  margin-left: 18%; }\n\n#south-america-title {\n  z-index: 1;\n  font-family: \"Lucida Grande\", Tahoma;\n  font-size: 26px;\n  font-weight: lighter;\n  font-variant: normal;\n  text-transform: uppercase;\n  color: black;\n  letter-spacing: 0.1em;\n  margin-top: 14%;\n  margin-left: 18%; }\n\n#europe-title {\n  z-index: 1;\n  font-family: \"Lucida Grande\", Tahoma;\n  font-size: 26px;\n  font-weight: lighter;\n  font-variant: normal;\n  text-transform: uppercase;\n  color: black;\n  letter-spacing: 0.1em;\n  margin-top: 14%;\n  margin-left: 18%; }\n\n.region {\n  z-index: 1;\n  position: absolute;\n  right: 36%;\n  top: 61%; }\n\n#travel-tabs {\n  background-color: black; }\n\n.container {\n  margin: 0 auto;\n  padding: 40px;\n  width: 80%;\n  color: #333;\n  background: #419be0; }\n\n/*PROJECTS PAGE*/\n#projects-page {\n  min-height: 100%;\n  min-width: 1024px;\n  min-height: 780px;\n  width: 100%;\n  height: 100%;\n  top: 0;\n  left: 0;\n  background-color: #F0F8FF;\n  z-index: 2; }\n\n#projects-title {\n  z-index: 1;\n  font-family: \"Lucida Grande\", Tahoma;\n  font-size: 26px;\n  font-weight: lighter;\n  font-variant: normal;\n  text-transform: uppercase;\n  color: black;\n  letter-spacing: 0.1em;\n  margin-top: 14%;\n  margin-left: 18%; }\n\n#project-tile a {\n  margin-top: 15px;\n  background: rgba(255, 255, 255, 0.3);\n  border: 0px;\n  text-decoration: none;\n  box-shadow: 3px 3px 50px rgba(0, 0, 0, 0.3);\n  min-height: 310px; }\n\n#project-tile a:hover {\n  background: rgba(255, 255, 255, 0.3);\n  border: 0px;\n  font-family: 'Lucinda Grande', sans-serif; }\n\n#project-tile a p {\n  color: black; }\n\n#project-tile-title {\n  font-size: 1.5em;\n  text-align: center;\n  font-family: 'Lucinda Grande', sans-serif;\n  text-transform: uppercase;\n  margin-bottom: 0px;\n  margin-top: 10px; }\n\n#project-tile-subtitle {\n  font-size: 1.5;\n  text-align: center;\n  font-family: 'Lucinda Grande', sans-serif;\n  margin-bottom: 0px;\n  margin-top: 0px; }\n\n#mapid {\n  height: 500px; }\n\n#map-text {\n  z-index: 1;\n  font-family: \"Lucida Grande\", Tahoma;\n  font-size: 20px;\n  font-weight: lighter;\n  font-variant: normal;\n  text-transform: uppercase;\n  color: black;\n  letter-spacing: 0.1em;\n  display: flex;\n  justify-content: left;\n  margin-top: 50px;\n  margin-bottom: 10px;\n  margin-left: 20px; }\n\n#back-text {\n  z-index: 1;\n  font-family: \"Lucida Grande\", Tahoma;\n  font-size: 20px;\n  font-weight: lighter;\n  font-variant: normal;\n  text-transform: uppercase;\n  color: black;\n  letter-spacing: 0.1em;\n  display: flex;\n  justify-content: left;\n  margin-left: 20px; }\n\n#individual-country-pics {\n  display: inline-block;\n  float: left;\n  margin: 0px;\n  padding: 0px;\n  margin-top: 20px;\n  margin-bottom: 20px; }\n\n/*READING PAGE*/\n#reading-page {\n  height: 100vh;\n  width: 100vw;\n  background-color: #F0F8FF; }\n\nimg[src=\"files/img/books.jpg\"] {\n  height: auto;\n  min-width: 350px;\n  min-height: 350px;\n  padding-left: 75px;\n  padding-right: 75px; }\n\n.container-fluid {\n  height: 100%; }\n\nul {\n  list-style: none;\n  font-size: 12px;\n  color: black;\n  font-family: \"Lucida Grande\", Tahoma;\n  font-weight: lighter;\n  letter-spacing: 0.1em;\n  z-index: 1; }\n\n#reading-title {\n  z-index: 1;\n  font-family: \"Lucida Grande\", Tahoma;\n  font-size: 26px;\n  font-weight: lighter;\n  font-variant: normal;\n  text-transform: uppercase;\n  color: black;\n  letter-spacing: 0.1em;\n  margin-top: 14%;\n  margin-left: 11%;\n  margin-bottom: 5%; }\n\n#reading-tabs {\n  margin-top: 7%; }\n\n.btn-sample {\n  position: absolute;\n  visibility: visible;\n  right: 15%;\n  top: 18%; }\n\n#reading-caption {\n  z-index: 1;\n  font-family: \"Lucida Grande\", Tahoma;\n  font-size: 14px;\n  font-weight: lighter;\n  font-variant: normal;\n  color: black;\n  letter-spacing: 0.1em;\n  font-style: italic;\n  padding-left: 75px;\n  padding-top: 20px; }\n\n#articles-border {\n  border-radius: 25px;\n  border: 2px solid black;\n  padding: 20px;\n  width: 800px;\n  height: 515px; }\n", ""]);
+exports.push([module.i, "/*HOME PAGE*/\n#home-page {\n  width: 100vw;\n  height: 100vh;\n  position: fixed; }\n\nimg [src=\"files/img/IMG_8779.jpg\"] {\n  width: 100vw;\n  height: 100vh;\n  top: 0;\n  left: 0; }\n\n#aboutlocator {\n  position: absolute;\n  visibility: visible;\n  left: 80px;\n  top: 135px;\n  z-index: 1; }\n\n#writinglocator {\n  position: absolute;\n  visibility: visible;\n  left: 160px;\n  top: 135px;\n  z-index: 1; }\n\n#travellocator {\n  position: absolute;\n  visibility: visible;\n  left: 255px;\n  top: 135px;\n  z-index: 1; }\n\n#projectslocator {\n  position: absolute;\n  visibility: visible;\n  left: 340px;\n  top: 135px;\n  z-index: 1; }\n\n#readinglocator {\n  position: absolute;\n  visibility: visible;\n  left: 450px;\n  top: 134px;\n  z-index: 1; }\n\n#homelinks {\n  color: white;\n  font-size: 24px; }\n\n#rectangle {\n  position: absolute;\n  visibility: visible;\n  right: 0px;\n  top: 315px;\n  z-index: 1;\n  background-color: #333333; }\n\n#rectanglefont {\n  font-family: \"Lucida Grande\", Tahoma;\n  font-size: 20px;\n  font-weight: lighter;\n  font-variant: normal;\n  text-transform: uppercase;\n  color: white;\n  letter-spacing: 0.3em; }\n\n#home-resume {\n  color: dimgray;\n  max-width: 500px;\n  position: absolute;\n  bottom: 40%;\n  left: 86%; }\n\n/*NAVBAR PAGE */\n#navbarlinks {\n  color: black;\n  font-size: 16px;\n  font-family: \"Courier New\", sans-serif; }\n\n.nav-stacked {\n  position: absolute;\n  visibility: visible;\n  left: 630px;\n  top: 5px; }\n\n/*ABOUT PAGE*/\n#about-page {\n  height: 100vh;\n  width: 100vw;\n  background-color: #F0F8FF; }\n\n#about-text {\n  color: dimgray;\n  max-width: 500px;\n  font-size: 15px;\n  margin-top: 35px; }\n\n#about-title {\n  z-index: 1;\n  font-family: \"Lucida Grande\", Tahoma;\n  font-size: 34px;\n  font-weight: lighter;\n  font-variant: normal;\n  text-transform: uppercase;\n  color: black;\n  letter-spacing: 0.1em;\n  display: flex;\n  justify-content: center;\n  margin-top: 80px;\n  margin-bottom: 30px;\n  margin-left: 30px; }\n\n#about-subtitle {\n  z-index: 1;\n  font-family: \"Lucida Grande\", Tahoma;\n  font-size: 24px;\n  font-weight: lighter;\n  font-variant: normal;\n  text-transform: uppercase;\n  color: black;\n  letter-spacing: 0.1em; }\n\n#resume {\n  color: dimgray;\n  max-width: 500px;\n  padding-bottom: 200px; }\n\nimg[src=\"files/img/IMG_8109.jpg\"] {\n  height: auto;\n  min-width: 350px;\n  min-height: 350px;\n  padding-left: 150px; }\n\n/*WRITING PAGE*/\n.default-container {\n  color: #F0F8FF;\n  margin: 180px 5%;\n  min-height: 46vh; }\n\n#writing-page {\n  min-height: 100%;\n  min-width: 1024px;\n  min-height: 780px;\n  width: 100%;\n  height: 100%;\n  top: 0;\n  left: 0;\n  background-color: #F0F8FF;\n  z-index: 2; }\n\n.thumbnail {\n  position: relative;\n  margin-top: 80px; }\n\nimg {\n  width: 100%;\n  padding-bottom: 20px; }\n\n#writing-title {\n  z-index: 1;\n  font-family: \"Lucida Grande\", Tahoma;\n  font-size: 26px;\n  font-weight: lighter;\n  font-variant: normal;\n  text-transform: uppercase;\n  color: black;\n  letter-spacing: 0.1em;\n  margin-top: 14%;\n  margin-left: 18%;\n  padding-bottom: 5%; }\n\n#article-tile a {\n  margin-top: 15px;\n  background: rgba(255, 255, 255, 0.3);\n  border: 0px;\n  text-decoration: none;\n  box-shadow: 3px 3px 50px rgba(0, 0, 0, 0.3);\n  min-height: 310px; }\n\n#article-tile a:hover {\n  background: rgba(255, 255, 255, 0.3);\n  border: 0px;\n  font-family: 'Lucinda Grande', sans-serif; }\n\n#article-tile a p {\n  color: black; }\n\n#article-tile-title {\n  font-size: 1.5em;\n  text-align: center;\n  font-family: 'Lucinda Grande', sans-serif;\n  text-transform: uppercase;\n  margin-bottom: 0px;\n  margin-top: 10px; }\n\n#article-tile-subtitle {\n  font-size: 1.5;\n  text-align: center;\n  font-family: 'Lucinda Grande', sans-serif;\n  margin-bottom: 0px;\n  margin-top: 0px; }\n\n/*TRAVEL PAGE*/\n#travel-page {\n  width: 100vw;\n  height: 100vh;\n  position: fixed; }\n\nimg [src=\"files/img/fuego.jpg\"] {\n  width: 100vw;\n  height: 100vh;\n  top: 0;\n  left: 0; }\n\n#travel-caption {\n  z-index: 1;\n  font-family: \"Lucida Grande\", Tahoma;\n  font-size: 16px;\n  font-weight: lighter;\n  font-variant: normal;\n  color: black;\n  letter-spacing: 0.1em;\n  position: absolute;\n  right: 30px;\n  bottom: 3px;\n  font-style: italic; }\n\n#travel-text {\n  z-index: 1;\n  font-family: \"Lucida Grande\", Tahoma;\n  font-size: 72px;\n  font-variant: normal;\n  color: black;\n  letter-spacing: 0.1em;\n  position: absolute;\n  right: 32%;\n  top: 46%;\n  font-weight: bold; }\n\n#central-america-title {\n  z-index: 1;\n  font-family: \"Lucida Grande\", Tahoma;\n  font-size: 26px;\n  font-weight: lighter;\n  font-variant: normal;\n  text-transform: uppercase;\n  color: black;\n  letter-spacing: 0.1em;\n  margin-top: 14%;\n  margin-left: 18%; }\n\n#south-america-title {\n  z-index: 1;\n  font-family: \"Lucida Grande\", Tahoma;\n  font-size: 26px;\n  font-weight: lighter;\n  font-variant: normal;\n  text-transform: uppercase;\n  color: black;\n  letter-spacing: 0.1em;\n  margin-top: 14%;\n  margin-left: 18%; }\n\n#europe-title {\n  z-index: 1;\n  font-family: \"Lucida Grande\", Tahoma;\n  font-size: 26px;\n  font-weight: lighter;\n  font-variant: normal;\n  text-transform: uppercase;\n  color: black;\n  letter-spacing: 0.1em;\n  margin-top: 14%;\n  margin-left: 18%; }\n\n.region {\n  z-index: 1;\n  position: absolute;\n  right: 36%;\n  top: 61%; }\n\n#travel-tabs {\n  background-color: black; }\n\n.container {\n  margin: 0 auto;\n  padding: 40px;\n  width: 80%;\n  color: #333;\n  background: #419be0; }\n\n/*PROJECTS PAGE*/\n#projects-page {\n  min-height: 100%;\n  min-width: 1024px;\n  min-height: 780px;\n  width: 100%;\n  height: 100%;\n  top: 0;\n  left: 0;\n  background-color: #F0F8FF;\n  z-index: 2; }\n\n#projects-title {\n  z-index: 1;\n  font-family: \"Lucida Grande\", Tahoma;\n  font-size: 26px;\n  font-weight: lighter;\n  font-variant: normal;\n  text-transform: uppercase;\n  color: black;\n  letter-spacing: 0.1em;\n  margin-top: 14%;\n  margin-left: 18%; }\n\n#project-tile a {\n  margin-top: 15px;\n  background: rgba(255, 255, 255, 0.3);\n  border: 0px;\n  text-decoration: none;\n  box-shadow: 3px 3px 50px rgba(0, 0, 0, 0.3);\n  min-height: 310px; }\n\n#project-tile a:hover {\n  background: rgba(255, 255, 255, 0.3);\n  border: 0px;\n  font-family: 'Lucinda Grande', sans-serif; }\n\n#project-tile a p {\n  color: black; }\n\n#project-tile-title {\n  font-size: 1.5em;\n  text-align: center;\n  font-family: 'Lucinda Grande', sans-serif;\n  text-transform: uppercase;\n  margin-bottom: 0px;\n  margin-top: 10px; }\n\n#project-tile-subtitle {\n  font-size: 1.5;\n  text-align: center;\n  font-family: 'Lucinda Grande', sans-serif;\n  margin-bottom: 0px;\n  margin-top: 0px; }\n\n#mapid {\n  height: 500px; }\n\n#map-text {\n  z-index: 1;\n  font-family: \"Lucida Grande\", Tahoma;\n  font-size: 20px;\n  font-weight: lighter;\n  font-variant: normal;\n  text-transform: uppercase;\n  color: black;\n  letter-spacing: 0.1em;\n  display: flex;\n  justify-content: left;\n  margin-top: 50px;\n  margin-bottom: 10px;\n  margin-left: 20px; }\n\n#back-text {\n  z-index: 1;\n  font-family: \"Lucida Grande\", Tahoma;\n  font-size: 20px;\n  font-weight: lighter;\n  font-variant: normal;\n  text-transform: uppercase;\n  color: black;\n  letter-spacing: 0.1em;\n  display: flex;\n  justify-content: left;\n  margin-left: 20px; }\n\n#individual-country-pics {\n  display: inline-block;\n  float: left;\n  margin: 0px;\n  padding: 0px;\n  margin-top: 20px;\n  margin-bottom: 20px; }\n\n/*READING PAGE*/\n#reading-page {\n  height: 100vh;\n  width: 100vw;\n  background-color: #F0F8FF; }\n\nimg[src=\"files/img/books.jpg\"] {\n  height: auto;\n  min-width: 350px;\n  min-height: 350px;\n  padding-left: 75px;\n  padding-right: 75px; }\n\n.container-fluid {\n  height: 100%; }\n\nul {\n  list-style: none;\n  font-size: 12px;\n  color: black;\n  font-family: \"Lucida Grande\", Tahoma;\n  font-weight: lighter;\n  letter-spacing: 0.1em;\n  z-index: 1; }\n\n#reading-title {\n  z-index: 1;\n  font-family: \"Lucida Grande\", Tahoma;\n  font-size: 26px;\n  font-weight: lighter;\n  font-variant: normal;\n  text-transform: uppercase;\n  color: black;\n  letter-spacing: 0.1em;\n  margin-top: 14%;\n  margin-left: 11%;\n  margin-bottom: 5%; }\n\n#reading-tabs {\n  margin-top: 7%; }\n\n.btn-sample {\n  position: absolute;\n  visibility: visible;\n  right: 15%;\n  top: 18%; }\n\n#reading-caption {\n  z-index: 1;\n  font-family: \"Lucida Grande\", Tahoma;\n  font-size: 14px;\n  font-weight: lighter;\n  font-variant: normal;\n  color: black;\n  letter-spacing: 0.1em;\n  font-style: italic;\n  padding-left: 75px;\n  padding-top: 20px; }\n\n#articles-border {\n  border-radius: 25px;\n  border: 2px solid black;\n  padding: 20px;\n  width: 800px;\n  height: 515px;\n  overflow-y: scroll; }\n", ""]);
 
 // exports
 
