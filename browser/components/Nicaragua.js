@@ -315,6 +315,12 @@ export default class Nicaragua extends Component {
               <img  className="col-md-4" src="files/img/nicaragua1.jpg" />
               <img  className="col-md-4" src="files/img/nicaragua2.jpg" />
               <img  className="col-md-4" src="files/img/nicaragua3.jpg" />
+              <img  className="col-md-4" src="files/img/nicaragua4.jpg" />
+              <img  className="col-md-4" src="files/img/nicaragua5.jpg" />
+              <img  className="col-md-4" src="files/img/nicaragua6.jpg" />
+              <img  className="col-md-4" src="files/img/nicaragua7.jpg" />
+              <img  className="col-md-4" src="files/img/nicaragua8.jpg" />
+              <img  className="col-md-4" src="files/img/nicaragua9.jpg" />
               </div>
             </div>
 
