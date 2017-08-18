@@ -37,6 +37,8 @@ export default class Guatemala extends Component {
         <p>Far and away my favorite country in Central America, Guate has something for everyone. Spectacular volcanos, unique Mayan culture, and truly warm, friendly people who speak easy-to-understand Spanish.</p>
         <p>There's pretty solid weather all year round, with the summer being a tad more rainy, and the Northeast region near Tikal being generally more tropical. It's an incredibly affordable country and there are options for people of all budgets.</p>
         <p>It's a country where the laid back vibe attracts people back year after year. I've spent a good deal of time in Antigua and around Lake Atitlan so included specific guides for those locales...enjoy!</p>
+        <p><strong>Getting in: </strong>There isn't great public transport options from the main airport in Guatemala City. During the day there are hourly shuttles to Antigua (45 min, $10) but if you arrive at night you'll have to take a cab ($35-40). I never had any notable trouble at the land borders with Mexico in the Northwest, Belize in the Northeast and El Salvador in the south. </p>
+        <p><strong>Must Dos: </strong>Drink coffee and mezcal in colorful Antigua, take in the majestic volcanos at Lake Atitlan, check out the Mayan ruins of Tikal, ride a chicken bus.</p>
      </div>
     })
       map.addListener('center_changed', () => {

@@ -73,7 +73,7 @@ export default class Belize extends Component {
         <div>
           <p>With its tropical vibes, reggae music and english-speaking populace, Belize feels a lot more like the Caribbean then the rest of its Central American neighbors.</p>
           <p>Formerly British Honduras, it became its own country in 1981, and has a population of around 400,000, roughly the size of Oakland. I spent a week in Caye Caulker, which is often the first or last stop on the Central American backpacker trail. Other popular spots are Ambergris Caye (more upscale and resort-y), Hopkins (a small town in the south), and San Ignacio (a town in the west famous for its caves).</p>
-          <p><strong>Getting in: By air or bus you'll have to come through Belize City, which is probably not a place you'll want to hang around for too long. Boats to the Cayes can be found on the main docs in the downtown area and leave hourly.</strong></p>
+          <p><strong>Getting in: </strong>By air or bus you'll have to come through Belize City, which is probably not a place you'll want to hang around for too long. Boats to the Cayes can be found on the main docs in the downtown area and leave hourly.</p>
           <p><strong>Must Do's: </strong>Chill at the Split, read a novel, go snorkeling </p>
        </div>
     })

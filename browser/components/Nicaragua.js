@@ -7,7 +7,7 @@ export default class Nicaragua extends Component {
   constructor(props) {
 		super(props);
 		this.state = {
-			currPos: {lat: 12.8654, lng: -85.2072}, // default location: roma norte,
+			currPos: {lat: 12.8654, lng: -85.2072}, // default location: entire country
 			mapObj: {},
 			selectedMarker: {},
       view: []
@@ -16,39 +16,54 @@ export default class Nicaragua extends Component {
 		this.places = [];
 		this.componentDidMount = this.componentDidMount.bind(this);
     this.showOverview = this.showOverview.bind(this);
-    this.showActivities = this.showActivities.bind(this);
-    this.showRestaurants = this.showRestaurants.bind(this);
-    this.showBars = this.showBars.bind(this);
     this.showNeighborhoods = this.showNeighborhoods.bind(this);
-    this.showCafes = this.showCafes.bind(this);
+    this.showGranada = this.showGranada.bind(this);
     this.showBudget = this.showBudget.bind(this);
     this.showRead = this.showRead.bind(this);
 
 	}
 
-  componentDidMount() {
-		const map = new google.maps.Map(document.getElementById('mapid'), {
-		  center: this.state.currPos,
-		  zoom: 7
-		});
-    const nicaragua = places[1];
+componentDidMount() {
+  		const map = new google.maps.Map(document.getElementById('mapid'), {
+  		  center: this.state.currPos,
+  		  zoom: 7
+  		});
       this.setState({
         mapObj: map,
-        view: nicaragua.overview
+        view:
+        <div>
+          <p>Far and away my favorite country in Central America, Guate has something for everyone. Spectacular volcanos, unique Mayan culture, and truly warm, friendly people who speak easy-to-understand Spanish.</p>
+          <p>There's pretty solid weather all year round, with the summer being a tad more rainy, and the Northeast region near Tikal being generally more tropical. It's an incredibly affordable country and there are options for people of all budgets.</p>
+          <p>It's a country where the laid back vibe attracts people back year after year. I've spent a good deal of time in Antigua and around Lake Atitlan so included specific guides for those locales...enjoy!</p>
+       </div>
       })
-    		map.addListener('center_changed', () => {
-    			window.setTimeout(() => {
-    				this.setState({'currPos': {lat: map.getCenter().lat(), lng: map.getCenter().lng()}});
-    			}, 1000)
-    		})
-	 }
+        map.addListener('center_changed', () => {
+          window.setTimeout(() => {
+            this.setState({'currPos': {lat: map.getCenter().lat(), lng: map.getCenter().lng()}});
+          }, 1000)
+        })
+   }
 
-  showOverview(){
-    const nicaragua = places[1];
+  showOverview() {
+  		const map = new google.maps.Map(document.getElementById('mapid'), {
+  		  center: this.state.currPos,
+  		  zoom: 7
+  		});
       this.setState({
-        view: nicaragua.overview
-    })
-  }
+        mapObj: map,
+        view:
+        <div>
+          <p>Far and away my favorite country in Central America, Guate has something for everyone. Spectacular volcanos, unique Mayan culture, and truly warm, friendly people who speak easy-to-understand Spanish.</p>
+          <p>There's pretty solid weather all year round, with the summer being a tad more rainy, and the Northeast region near Tikal being generally more tropical. It's an incredibly affordable country and there are options for people of all budgets.</p>
+          <p>It's a country where the laid back vibe attracts people back year after year. I've spent a good deal of time in Antigua and around Lake Atitlan so included specific guides for those locales...enjoy!</p>
+       </div>
+      })
+        map.addListener('center_changed', () => {
+          window.setTimeout(() => {
+            this.setState({'currPos': {lat: map.getCenter().lat(), lng: map.getCenter().lng()}});
+          }, 1000)
+        })
+   }
 
   showNeighborhoods(){
     const map = new google.maps.Map(document.getElementById('mapid'), {
@@ -90,12 +105,11 @@ export default class Nicaragua extends Component {
       createPin('ChIJ8bh9yyz50YURlL2cFjXnr98'); //centro
     }
 
-  showActivities(){
+  showGranada(){
     const map = new google.maps.Map(document.getElementById('mapid'), {
-		  center: this.state.currPos,
-		  zoom: 13
-		});
-    const nicaragua = places[1];
+      center: {lat: 11.9344, lng: -85.9560},
+      zoom: 14
+    });
       this.setState({
         mapObj: map,
         view: nicaragua.activities
@@ -123,147 +137,46 @@ export default class Nicaragua extends Component {
               }
         });
       }
-      createPin('ChIJgR1EcT7_0YUREAsbqALaMjc'); //mercado medellin
-      createPin('ChIJOz-6AMT_0YURofTM9_ekAWI'); //frida kahlo museum
-      createPin('ChIJ_6pkSM3-0YURDDaRslwM_0w'); //zocalo
-      createPin('ChIJScjIILQB0oURJMVub-MaI4Q'); //anthropology museum
-      createPin('ChIJb5QzwED_0YURQCgMF85waLs'); //hipodromo
-      createPin('ChIJb67ro-j_0YURes-LYhd6tH8'); //coyoacan st
-
-
+      createPin('ChIJeSryR-0MdI8RuMoyQWDb1z0'); //garden cafe
+      createPin('ChIJ296jJL4MdI8R5Z7oLkCeOLc'); //garaje
+      createPin('ChIJ8adRqJQOdI8RaFiu7nEYA7g'); //laguna apoyo
+      createPin('ChIJJzJqTulydI8R5w_UrRFxWwc'); //isletas
     }
 
-  showRestaurants(){
-		const map = new google.maps.Map(document.getElementById('mapid'), {
-		  center: this.state.currPos,
-		  zoom: 13
-		});
-    const nicaragua = places[1];
+  showBudget() {
+    const map = new google.maps.Map(document.getElementById('mapid'), {
+      center: this.state.currPos,
+      zoom: 7
+    });
       this.setState({
-        mapObj: map,
-        view: nicaragua.restaurants
-      })
-    		map.addListener('center_changed', () => {
-    			window.setTimeout(() => {
-    				this.setState({'currPos': {lat: map.getCenter().lat(), lng: map.getCenter().lng()}});
-    			}, 1000)
-    		})
-        function createPin (pinID) {
-          const infowindow = new google.maps.InfoWindow({
-              maxWidth: 350
-             });
-        const service = new google.maps.places.PlacesService(map);
-        service.getDetails({placeId: pinID }, function(place, status) {
-              if (status === google.maps.places.PlacesServiceStatus.OK) {
-                var marker = new google.maps.Marker({
-                    map: map,
-                    position: place.geometry.location
-                });
-                google.maps.event.addListener(marker, 'click', function() {
-                    infowindow.setContent('<div class="infoWindow">' + place.name +'</div>');
-                    infowindow.open(map, this);
-                });
-              }
-        });
-      }
-      createPin('ChIJez8vvy__0YURP0rx5WhEig4'); //contramar
-      createPin('ChIJZeIEDEH_0YURpQ_UHx0ZTTo'); //tacos hola
-      createPin('ChIJ5RLH1D7_0YURSMJSVlhAGCw'); //mercado roma
-      createPin('ChIJsyICZBb_0YURFFEjAh6qYBo'); //taqueria los parados
-      createPin('ChIJQVOX8Dr_0YURMvf_XgmgeCs'); //taqueria alvaro obregon
-      createPin('ChIJie02fDv_0YURKP-IhZY_VHQ'); //la chicha
-}
-  showBars(){
-		const map = new google.maps.Map(document.getElementById('mapid'), {
-		  center: this.state.currPos,
-		  zoom: 13
-		});
-    const nicaragua = places[1];
-      this.setState({
-        mapObj: map,
-        view: nicaragua.bars
-      })
-    		map.addListener('center_changed', () => {
-    			window.setTimeout(() => {
-    				this.setState({'currPos': {lat: map.getCenter().lat(), lng: map.getCenter().lng()}});
-    			}, 1000)
-    		})
-        function createPin (pinID) {
-          const infowindow = new google.maps.InfoWindow({
-              maxWidth: 350
-             });
-        const service = new google.maps.places.PlacesService(map);
-        service.getDetails({placeId: pinID }, function(place, status) {
-              if (status === google.maps.places.PlacesServiceStatus.OK) {
-                var marker = new google.maps.Marker({
-                    map: map,
-                    position: place.geometry.location
-                });
-                google.maps.event.addListener(marker, 'click', function() {
-                    infowindow.setContent('<div class="infoWindow">' + place.name +'</div>');
-                    infowindow.open(map, this);
-                });
-              }
-        });
-        }
-        createPin('ChIJX03s9zr_0YURHdcjFe9hbiE'); //limantour
-        createPin('ChIJwYsplTv_0YURAjGjBCo9olU'); //balmori
-        createPin('ChIJb0o-MkH_0YUReHcA77q4Mhc'); //la clandestina
-        createPin('ChIJxRZMnzb_0YURMVE1PsNPolo'); //hanky panky
-        createPin('ChIJ2_ua_zr_0YURRXldg2plimY'); //lilit
-  }
-
-  showCafes(){
-		const map = new google.maps.Map(document.getElementById('mapid'), {
-		  center: this.state.currPos,
-		  zoom: 13
-		});
-    const nicaragua = places[1];
-      this.setState({
-        mapObj: map,
-        view: nicaragua.cafes
-      })
-    		map.addListener('center_changed', () => {
-    			window.setTimeout(() => {
-    				this.setState({'currPos': {lat: map.getCenter().lat(), lng: map.getCenter().lng()}});
-    			}, 1000)
-    		})
-        function createPin (pinID) {
-          const infowindow = new google.maps.InfoWindow({
-              maxWidth: 350
-             });
-        const service = new google.maps.places.PlacesService(map);
-        service.getDetails({placeId: pinID }, function(place, status) {
-              if (status === google.maps.places.PlacesServiceStatus.OK) {
-                var marker = new google.maps.Marker({
-                    map: map,
-                    position: place.geometry.location
-                });
-                google.maps.event.addListener(marker, 'click', function() {
-                    infowindow.setContent('<div class="infoWindow">' + place.name +'</div>');
-                    infowindow.open(map, this);
-                });
-              }
-        });
-        }
-        createPin('ChIJ3f4lPyX_0YUR8lpHjtzEGxM');  //dosis
-        createPin('ChIJU5A2ITz_0YURsC60fDL48L0');  //cucurucho
-        createPin('ChIJV_W9HGr_0YURpcwR_-cpQWg');  //chiquitito
-        createPin('ChIJ05Z2Hzv_0YURcUimdYlMwkM'); //casa cardinal
-        createPin('ChIJj1fIpTj_0YURXyxFscmpylc'); //cafe b
-}
-
-  showBudget(){
-    const nicaragua = places[1];
-      this.setState({
-        view: nicaragua.budget
+        view:
+        <div>
+          <p><em>If you avoid the really touristy stuff in San Juan Del Sur, Nicaragua is really cheap. Probably about $1200 a month cheap. </em></p>
+            <p><strong>Decent Airbnb room, shared apartment: </strong> $12-$20/night</p>
+            <p><strong>Hammock bed, hostel: </strong> $3-$5/night</p>
+            <p><strong>Coffee: </strong> $1.2 </p>
+            <p><strong>Sit Down dinner in Granada, mid-range restaurant: </strong>$11</p>
+            <p><strong>Bottle of Flor de Caña, supermarket: </strong> $4 </p>
+            <p><strong>Sunday Funday Pool Crawl: </strong>$30</p>
+            <p><strong>Three avocados, local market: </strong>75 cents</p>
+            <p><strong>Motorbike rental, Ometepe: </strong>$25/day</p>
+            <p><strong>Surfboard rental: </strong>$8</p>
+        </div>
     })
   }
 
   showRead(){
-    const nicaragua = places[1];
+    const map = new google.maps.Map(document.getElementById('mapid'), {
+      center: this.state.currPos,
+      zoom: 7
+    });
       this.setState({
-        view: nicaragua.read
+        view:
+        <div>
+          <p><strong><a href="https://longreads.com/2014/08/26/mango-mango-a-family-a-fruit-stand-and-survival-on-4-50-a-day/">Mango! Mango!: </a></strong>A day in the life of an informal street vendor in Managua's central market</p>
+          <p><strong><a href="http://www.believermag.com/issues/201101/?read=article_unferth">Internacionalista: </a></strong>A look at the expat scene during the civil war in the 80's</p>
+          <p><strong><a href="https://www.outsideonline.com/1920826/boomtown-gringo-girl-and-her-murder">The Boomtown, The Gringo, The Girl and Her Murder: </a></strong>Following the Eric Volz trial in SJDS</p>
+        </div>
     })
   }
 
@@ -285,11 +198,8 @@ export default class Nicaragua extends Component {
               <div className="col-md-4"></div>
               <ul className="nav nav-tabs col-md-offset-5">
                 <li role="presentation"  onClick={this.showOverview}><a href='#/travel/central-america/nicaragua'>overview.</a></li>
-                <li role="presentation"  onClick={this.showNeighborhoods}><a href='#/travel/central-america/nicaragua'>neighborhoods.</a></li>
-                <li role="presentation"  onClick={this.showActivities}><a href='#/travel/central-america/nicaragua'>activities.</a></li>
-                <li role="presentation"  onClick={this.showRestaurants}><a href='#/travel/central-america/nicaragua'>restaurants.</a></li>
-                <li role="presentation"  onClick={this.showBars}><a href='#/travel/central-america/nicaragua'>bars.</a></li>
-                <li role="presentation"  onClick={this.showCafes}><a href='#/travel/central-america/nicaragua'>cafes.</a></li>
+                <li role="presentation"  onClick={this.showNeighborhoods}><a href='#/travel/central-america/nicaragua'>where to go.</a></li>
+                <li role="presentation"  onClick={this.showGranada}><a href='#/travel/central-america/nicaragua'>in and around granada.</a></li>
                 <li role="presentation"  onClick={this.showBudget}><a href='#/travel/central-america/nicaragua'>budget.</a></li>
                 <li role="presentation"  onClick={this.showRead}><a href='#/travel/central-america/nicaragua'>read.</a></li>
 

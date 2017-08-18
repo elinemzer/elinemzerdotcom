@@ -271,7 +271,21 @@ img [src="files/img/fuego.jpg"] {
   letter-spacing: 0.1em;
   position: absolute;
   right: 32%;
+  top: 30%;
+  font-weight: bold;
+}
+
+#travel-smalltext {
+  z-index: 1;
+  font-family: "Lucida Grande", Tahoma;
+  font-size: 18px;
+  font-variant: normal;
+  color: black;
+  letter-spacing: 0.1em;
+  position: absolute;
+  right: 28%;
   top: 46%;
+  max-width: 40%;
   font-weight: bold;
 }
 
@@ -317,7 +331,7 @@ img [src="files/img/fuego.jpg"] {
 .region {
   z-index: 1;
   position: absolute;
-  right: 36%;
+  right: 40%;
   top: 61%;
 }
 
