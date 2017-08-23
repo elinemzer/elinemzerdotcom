@@ -11,12 +11,14 @@ export default function Travel () {
       ¿adónde va?
       </div>
 
+      <div id="travel-smalltext">
+        From 2015-2017, I spent most of my time wandering and working remotely in Latin America. Here are some ideas and tips for fellow travelers!
+      </div>
+
       <div className="region">
       <ul id="travel-tabs" className="nav nav-tabs">
         <li role="presentation"><a href='#/travel/central-america'>central america.</a></li>
         <li role="presentation"><a href='#/travel/south-america'>south america.</a></li>
-        <li role="presentation"><a href='#/travel/europe'>europe.</a></li>
-
       </ul>
     </div>
 
