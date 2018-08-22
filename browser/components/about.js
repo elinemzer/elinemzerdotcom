@@ -16,7 +16,7 @@ export default function Home () {
       <img className="col-md-5" src="files/img/IMG_8109.jpg" />
 
       <div id="about-subtitle" className="col-md-7">
-        software developer, writer, & researcher.
+        product manager, software developer, & researcher.
       </div>
 
       <div className="row">
